@@ -1,11 +1,14 @@
 import React from 'react';
 
+import Navbar from './Navbar';
+import Footer from './Footer';
+
 const Layout = ({ children }) => {
   return (
     <div className="App">
-      <h3>Navbar</h3>
+      <Navbar />
       {children}
-      <h3>Footer</h3>
+      <Footer />
     </div>
   );
 };
