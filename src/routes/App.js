@@ -4,12 +4,12 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import '../assets/style/App.scss';
 
 import Layout from '../components/Layout/Layout';
-import Main from '../containers/Main';
-import AboutUs from '../containers/AboutUs';
-import Contact from '../containers/Contact';
-import Services from '../containers/Services';
-import Products from '../containers/Products';
-import NotFound from '../containers/NotFound';
+import Main from '../views/Main';
+import AboutUs from '../views/AboutUs';
+import Contact from '../views/Contact';
+import Services from '../views/Services';
+import Products from '../views/Products';
+import NotFound from '../views/NotFound';
 
 const App = () => {
   return (
