@@ -33,6 +33,9 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
+            options: {
+              sourceMap: true,
+            },
           },
           'css-loader',
           'sass-loader',
@@ -43,7 +46,9 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: { name: 'assets/[hash].[ext]' },
+            options: {
+              name: '[hash].[ext]',
+            },
           },
         ],
       },
@@ -58,7 +63,7 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css',
+      filename: '[name].css',
     }),
   ],
 };

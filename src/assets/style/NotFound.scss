@@ -1,0 +1,61 @@
+@import './Vars.scss';
+
+.NotFound {
+  background-image: url('../static/NotFound-wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.NotFound img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.NotFound h1 {
+  font-size: 140px;
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  color: $gray-background-color;
+  color: $orange-color;
+}
+
+.NotFound h3 {
+  margin-top: -20px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-family: $sarabun-font;
+  font-family: $text-wght;
+  color: $white-general-color;
+}
+
+@media only screen and (min-width: 600px) {
+  .NotFound h1 {
+    font-size: 180px;
+  }
+
+  .NotFound h3 {
+    margin-top: -30px;
+    margin-bottom: 40px;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .NotFound h1 {
+    font-size: 200px;
+  }
+
+  .NotFound h3 {
+    margin-top: -35px;
+    margin-bottom: 50px;
+    font-size: 45px;
+  }
+}

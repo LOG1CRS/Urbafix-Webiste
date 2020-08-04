@@ -7,29 +7,8 @@ import logo from '../../assets/static/urbafix-logo-web.png';
 import '../../assets/style/Navbar.scss';
 
 const Navbar = () => {
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      document.getElementById('nav-container').style.backgroundColor =
-        '#161616';
-      document.getElementById('logo-text-mobile').style.color = 'white';
-      document.getElementById('logo-text-desktop').style.color = 'white';
-    } else {
-      document.getElementById('nav-container').style.backgroundColor =
-        'transparent';
-      document.getElementById('logo-text-mobile').style.color = 'transparent';
-      document.getElementById('logo-text-desktop').style.color = 'transparent';
-    }
-  }
-
-  window.onscroll = function () {
-    scrollFunction();
-  };
-
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="container">
         <Link to="/">
           <img className="nav-logo" src={logo} alt="Urbafix-logo" />
@@ -43,8 +22,8 @@ const Navbar = () => {
             <Link to="/products">Productos</Link>
           </li>
           <li className="dropdown">
-            <Link>Servicios</Link>
-            <ul className="dropdown-content" id="dropdown">
+            <Link to="#">Servicios</Link>
+            <ul className="dropdown-content">
               <li>
                 <Link to="/services" serviceValue="1">
                   Señalamiento Horizontal

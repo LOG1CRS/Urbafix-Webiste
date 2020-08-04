@@ -13,3 +13,27 @@ html {
 body {
   background-color: $white-general-color;
 }
+
+.button-primary {
+  background-color: $orange-color;
+  text-decoration: none;
+  color: $white-general-color;
+  font-family: $roboto-font;
+  font-weight: $button-wght;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .button-primary {
+    font-size: 25px;
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .button-primary {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
