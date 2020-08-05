@@ -7,6 +7,26 @@ import logo from '../../assets/static/urbafix-logo-web.png';
 import '../../assets/style/Navbar.scss';
 
 const Navbar = () => {
+  function scrollFunction(screen) {
+    if (screen > 1200) {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        document.getElementById('header').style.backgroundColor = '#fff';
+        document.getElementById('nav-links').classList.add('nav-links');
+      } else {
+        document.getElementById('header').style.backgroundColor = 'transparent';
+        document.getElementById('nav-links').classList.remove('nav-links');
+      }
+    }
+  }
+
+  window.onscroll = function () {
+    const screen = document.documentElement.clientWidth;
+    scrollFunction(screen);
+  };
+
   return (
     <header className="header" id="header">
       <div className="container">
@@ -17,7 +37,7 @@ const Navbar = () => {
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon" />
         </label>
-        <ul className="menu">
+        <ul className="menu" id="nav-links">
           <li>
             <Link to="/products">Productos</Link>
           </li>
