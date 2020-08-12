@@ -2,7 +2,6 @@
 
 .header {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   height: 60px;
@@ -154,7 +153,7 @@ a {
   .header {
     height: 90px;
     background-color: transparent;
-    transition: all 0.5s;
+    transition: all 0.7s;
   }
 
   .header ul {
@@ -228,5 +227,20 @@ a {
     a {
       color: black;
     }
+  }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+  a {
+    font-size: 19px;
+    color: $white-general-color;
+  }
+
+  .dropdown-content {
+    right: 470px;
+  }
+
+  .nav-logo {
+    width: 70px;
   }
 }

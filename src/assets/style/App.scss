@@ -21,19 +21,35 @@ body {
   font-family: $roboto-font;
   font-weight: $button-wght;
   font-size: 15px;
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+.button-primary:active {
+  background-color: #b86800;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 @media only screen and (min-width: 600px) {
   .button-primary {
     font-size: 25px;
-    padding: 10px 20px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .button-primary {
     font-size: 20px;
-    padding: 10px 20px;
   }
 }

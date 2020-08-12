@@ -11,47 +11,90 @@ const Contact = () => {
           <h1>Contacto.</h1>
         </div>
         <div className="contact-icons">
-          <div className="icon-location">
-            <p>location</p>
+          <div className="icon-container">
+            <div className="icon">
+              <i className="fas fa-map-marker-alt" />
+            </div>
+            <div className="description">
+              <p>
+                Eulogio Parra #2684.
+                <br />
+                Guadalajara, Jalisco
+              </p>
+            </div>
           </div>
-          <div className="icon-mail">
-            <p>mail</p>
+          <div className="icon-container">
+            <div className="icon">
+              <i className="far fa-envelope" />
+            </div>
+            <div className="description">
+              <p>ventas@urbafix.com</p>
+            </div>
           </div>
-          <div className="icon-movil">
-            <p>movil</p>
+          <div className="icon-container">
+            <div className="icon">
+              <i className="fas fa-phone-alt" />
+            </div>
+            <div className="description">
+              <p>3319638201</p>
+            </div>
           </div>
         </div>
         <div className="contact-inputs">
           <div className="inputs">
             <div className="input-space">
-              <input type="text" className="input-field" />
-              <label>Name</label>
-              <span />
+              <input
+                type="text"
+                className="input-field"
+                required="require"
+                autoComplete="ignore"
+              />
+              <label className="input-label">Nombre</label>
             </div>
             <div className="input-space">
-              <input type="text" className="input-field" />
-              <label>Name</label>
-              <span />
+              <input
+                type="text"
+                className="input-field"
+                required="require"
+                autoComplete="ignore"
+              />
+              <label className="input-label">Apellidos</label>
             </div>
           </div>
           <div className="inputs">
             <div className="input-space">
-              <input type="text" className="input-field" />
-              <label>Name</label>
-              <span />
+              <input
+                type="email"
+                className="input-field"
+                required="require"
+                autoComplete="ignore"
+              />
+              <label className="input-label">Correo Electronico</label>
             </div>
             <div className="input-space">
-              <input type="text" className="input-field" />
-              <label>Name</label>
-              <span />
+              <input
+                type="number"
+                className="input-field"
+                required="require"
+                autoComplete="ignore"
+              />
+              <label className="input-label">Numero Celular</label>
             </div>
           </div>
         </div>
         <div className="contact-message">
-          <textarea name="" id="" cols="30" rows="10" />
+          <textarea
+            name=""
+            id="textarea-message"
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"
+          />
         </div>
         <div className="contact-button">
-          <button type="button">Contactar</button>
+          <button type="button" className="button-primary">
+            Contactar
+          </button>
         </div>
       </div>
     </div>

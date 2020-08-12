@@ -14,9 +14,12 @@ const Navbar = () => {
         document.documentElement.scrollTop > 80
       ) {
         document.getElementById('header').style.backgroundColor = '#fff';
+        document.getElementById('header').style.boxShadow =
+          '1px 1px 4px 0 rgba(0, 0, 0, 0.1)';
         document.getElementById('nav-links').classList.add('nav-links');
       } else {
         document.getElementById('header').style.backgroundColor = 'transparent';
+        document.getElementById('header').style.boxShadow = 'none';
         document.getElementById('nav-links').classList.remove('nav-links');
       }
     }

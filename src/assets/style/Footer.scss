@@ -131,3 +131,22 @@
     height: 75px;
   }
 }
+
+@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+  .nav-link {
+    font-size: 19px;
+  }
+
+  .social-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-rights p {
+    font-size: 10px;
+  }
+}
