@@ -1,0 +1,152 @@
+@import '../Vars.scss';
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background-color: $gray-background-color;
+}
+
+.footer-main {
+  width: 100%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 50% 20%;
+}
+
+.footer-rights {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-rights p {
+  color: $white-general-color;
+  font-family: $sarabun-font;
+  font-weight: $text-wght;
+  font-size: 12px;
+}
+
+.footer-nav {
+  //border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  order: 2;
+}
+
+.nav-link {
+  color: $white-general-color;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: $sarabun-font;
+  font-weight: $text-wght;
+}
+
+.footer-logo {
+  //border: 1px solid white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  order: 1;
+}
+
+.footer-logo img {
+  width: 90px;
+}
+
+.footer-social {
+  //border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  order: 3;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: $white-general-color;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    height: 150px;
+  }
+
+  .footer-main {
+    height: 100px;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 100%;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    order: 1;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .footer-logo {
+    align-items: center;
+    order: 2;
+  }
+
+  .footer-logo img {
+    width: 70px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    width: 100%;
+    height: 220px;
+  }
+
+  .footer-main {
+    height: 170px;
+  }
+
+  .nav-link {
+    font-size: 25px;
+  }
+
+  .footer-logo img {
+    width: 110px;
+  }
+
+  .social-icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+  .nav-link {
+    font-size: 19px;
+  }
+
+  .social-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-rights p {
+    font-size: 10px;
+  }
+}

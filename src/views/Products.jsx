@@ -1,7 +1,13 @@
 import React from 'react';
 
+import Hero from '../components/Products/Hero';
+
 const Products = () => {
-  return <h1>Products</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default Products;

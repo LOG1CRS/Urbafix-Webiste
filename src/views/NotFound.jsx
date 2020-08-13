@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../assets/style/NotFound.scss';
+import '../assets/style/NotFound/NotFound.scss';
 
 const NotFound = () => {
   return (

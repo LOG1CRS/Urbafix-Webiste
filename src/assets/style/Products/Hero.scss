@@ -1,0 +1,85 @@
+@import '../Vars.scss';
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url('../../static/Products-wallpaper.png');
+  background-size: cover;
+  background-position: left;
+}
+
+.products-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-content {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+
+.products-container h1 {
+  color: $white-general-color;
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  font-size: 50px;
+}
+
+.products-button {
+  width: 150px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero {
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .products-content {
+    height: 300px;
+  }
+
+  .products-container h1 {
+    font-size: 80px;
+  }
+
+  .products-button {
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .products-content {
+    height: 300px;
+  }
+
+  .products-container h1 {
+    font-size: 70px;
+  }
+
+  .products-button {
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+  .products-container h1 {
+    font-size: 60px;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../../assets/style/Footer.scss';
+import '../../assets/style/Layout/Footer.scss';
 import logo from '../../assets/static/urbafix-logo-web.png';
 
 const Footer = () => {
