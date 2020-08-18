@@ -1,0 +1,93 @@
+@import '../Vars.scss';
+
+.about-us {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../static/about-us-wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-us h1 {
+  color: $white-general-color;
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  font-size: 60px;
+  padding-bottom: 50px;
+}
+
+.container-text {
+  width: 320px;
+}
+
+.about-us p {
+  color: $white-general-color;
+  font-family: $roboto-font;
+  font-weight: $text-wght;
+  font-size: 22px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-us h1 {
+    font-size: 100px;
+    padding-bottom: 50px;
+  }
+
+  .container-text {
+    width: 630px;
+  }
+
+  .about-us p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-us h1 {
+    font-size: 110px;
+    padding-bottom: 40px;
+  }
+
+  .container-text {
+    width: 1000px;
+  }
+
+  .about-us p {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .about-us h1 {
+    font-size: 120px;
+    padding-bottom: 50px;
+  }
+
+  .container-text {
+    width: 800px;
+  }
+
+  .about-us p {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+  .about-us h1 {
+    font-size: 90px;
+    padding-bottom: 50px;
+  }
+
+  .container-text {
+    width: 800px;
+  }
+
+  .about-us p {
+    font-size: 30px;
+  }
+}
