@@ -1,7 +1,13 @@
 import React from 'react';
 
+import Hero from '../components/AboutUs/Hero';
+
 const AboutUs = () => {
-  return <h1>About Us</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default AboutUs;
