@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
+import Hero from '../components/Services/Hero';
 
 const Services = () => {
-  return <h1>Services</h1>;
+  const [type, setType] = useState();
+  const serviceValue = useLocation().state;
+
+  useEffect(() => {
+    if (serviceValue === undefined) {
+      setType(0);
+    } else {
+      setType(serviceValue.type);
+    }
+  });
+
+  return (
+    <>
+      <Hero service={type} />
+    </>
+  );
 };
 
 export default Services;

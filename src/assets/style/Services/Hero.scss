@@ -1,0 +1,129 @@
+@import '../Vars.scss';
+
+.services {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.services-hero-space {
+  width: 90%;
+  height: 250px;
+  background-color: $white-general-color;
+  border-radius: 35px 35px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-hero-container {
+  width: 290px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.services-hero-container h2 {
+  text-align: center;
+  font-family: $sarabun-font;
+  font-weight: $title-wght;
+  font-size: 30px;
+}
+
+.services-hero-container h1 {
+  text-align: center;
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  font-size: 37px;
+}
+
+@media only screen and (min-width: 600px) {
+  .services-hero-space {
+    width: 70%;
+    height: 300px;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .services-hero-container {
+    width: 400px;
+    height: 250px;
+  }
+
+  .services-hero-container h2 {
+    font-size: 40px;
+  }
+
+  .services-hero-container h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .services-hero-space {
+    width: 1000px;
+    height: 310px;
+    border-radius: 100px 100px 0 0;
+  }
+
+  .services-hero-container {
+    width: 480px;
+    height: 250px;
+    justify-content: space-between;
+  }
+
+  .services-hero-container h2 {
+    font-size: 48px;
+  }
+
+  .services-hero-container h1 {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .services-hero-space {
+    width: 70%;
+    height: 300px;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .services-hero-container {
+    width: 480px;
+    height: 270px;
+  }
+
+  .services-hero-container h2 {
+    font-size: 45px;
+  }
+
+  .services-hero-container h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+  .services-hero-space {
+    width: 670px;
+    height: 220px;
+    border-radius: 50px 50px 0 0;
+  }
+
+  .services-hero-container {
+    width: 360px;
+    height: 180px;
+    justify-content: space-between;
+  }
+
+  .services-hero-container h2 {
+    font-size: 35px;
+  }
+
+  .services-hero-container h1 {
+    font-size: 45px;
+  }
+}

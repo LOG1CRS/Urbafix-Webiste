@@ -1,0 +1,227 @@
+@import '../Vars.scss';
+
+.who-is-urbafix {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.who-main {
+  width: 90%;
+  height: 100%;
+}
+
+.who-image-container {
+  display: none;
+}
+
+.who-text-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 60% 20%;
+  align-items: center;
+  justify-items: center;
+}
+
+.who-title h2 {
+  margin-top: 40px;
+  color: $orange-color;
+  font-size: 45px;
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  text-align: center;
+}
+
+.who-text p {
+  font-family: $sarabun-font;
+  font-weight: $text-wght;
+  font-size: 23px;
+  text-align: center;
+  padding: 10px;
+}
+
+.who-button {
+  width: 250px !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .who-is-urbafix {
+    height: 700px;
+  }
+
+  .who-main {
+    width: 70%;
+    height: 100%;
+  }
+
+  .who-title h2 {
+    margin-top: 40px;
+    font-size: 55px;
+  }
+
+  .who-text p {
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .who-button {
+    width: 250px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .who-is-urbafix {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+  }
+
+  .who-main {
+    background-image: none;
+    width: 100%;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .who-text-container {
+    width: 100%;
+    height: 770px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    justify-items: left;
+  }
+
+  .who-image-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .who-img {
+    width: 100%;
+  }
+
+  .who-title h2 {
+    font-size: 80px;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  .who-text p {
+    font-size: 40px;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .who-button {
+    margin-left: 30px;
+    width: 350px !important;
+    height: 60px !important;
+    font-size: 22px !important;
+  }
+
+  .who-button-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .who-is-urbafix {
+    height: 800px;
+  }
+
+  .who-main {
+    width: 70%;
+    height: 100%;
+  }
+
+  .who-title h2 {
+    margin-top: 50px;
+    font-size: 65px;
+  }
+
+  .who-text p {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .who-button {
+    width: 250px !important;
+  }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+  .who-is-urbafix {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+  }
+
+  .who-main {
+    background-image: none;
+    width: 100%;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .who-text-container {
+    width: 100%;
+    height: 510px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    justify-items: left;
+  }
+
+  .who-image-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .who-img {
+    width: 100%;
+  }
+
+  .who-title h2 {
+    font-size: 60px;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  .who-text p {
+    font-size: 25px;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .who-button {
+    margin-left: 30px;
+    width: 250px !important;
+    height: 40px !important;
+    font-size: 18px !important;
+  }
+
+  .who-button-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+}

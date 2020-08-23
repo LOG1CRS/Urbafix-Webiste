@@ -1,7 +1,14 @@
 import React from 'react';
+import Hero from '../components/Main/Hero';
+import WhoIsUrbafix from '../components/Main/WhoIsUrbafix';
 
 const Main = () => {
-  return <h1>Main</h1>;
+  return (
+    <>
+      <Hero />
+      <WhoIsUrbafix />
+    </>
+  );
 };
 
 export default Main;

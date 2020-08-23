@@ -1,0 +1,129 @@
+@import '../Vars.scss';
+
+.hero-main {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../static/hero-wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-main-container {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-main-title {
+  color: $white-general-color;
+  text-align: center;
+  font-family: $sarabun-font;
+  font-weight: $title-wght;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.hero-main-description {
+  color: $white-general-color;
+  text-align: center;
+  font-family: $roboto-font;
+  font-weight: $text-wght;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.button-main {
+  font-size: 20px !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-main-container {
+    width: 520px;
+  }
+
+  .hero-main-title {
+    font-size: 45px;
+    margin-bottom: 35px;
+  }
+
+  .hero-main-description {
+    font-size: 22px;
+    margin-bottom: 70px;
+  }
+
+  .button-main {
+    font-size: 20px !important;
+    width: 330px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-main-container {
+    width: 880px;
+  }
+
+  .hero-main-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .hero-main-description {
+    font-size: 33px;
+    margin-bottom: 80px;
+  }
+
+  .button-main {
+    font-size: 22px !important;
+    width: 340px !important;
+    height: 55px !important;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .hero-main-container {
+    width: 700px;
+  }
+
+  .hero-main-title {
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
+
+  .hero-main-description {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  .button-main {
+    font-size: 25px !important;
+    width: 370px !important;
+    height: 70px !important;
+  }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+  .hero-main-container {
+    width: 700px;
+  }
+
+  .hero-main-title {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+
+  .hero-main-description {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  .button-main {
+    font-size: 20px !important;
+    width: 300px !important;
+    height: 45px !important;
+  }
+}

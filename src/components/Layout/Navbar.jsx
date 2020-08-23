@@ -48,22 +48,50 @@ const Navbar = () => {
             <Link to="#">Servicios</Link>
             <ul className="dropdown-content">
               <li>
-                <Link to="/services" serviceValue="1">
+                <Link
+                  to={{
+                    pathname: '/services',
+                    state: {
+                      type: 1,
+                    },
+                  }}
+                >
                   Señalamiento Horizontal
                 </Link>
               </li>
               <li>
-                <Link to="/services" serviceValue="2">
+                <Link
+                  to={{
+                    pathname: '/services',
+                    state: {
+                      type: 2,
+                    },
+                  }}
+                >
                   Señalamiento Vertical
                 </Link>
               </li>
               <li>
-                <Link to="/services" serviceValue="3">
+                <Link
+                  to={{
+                    pathname: '/services',
+                    state: {
+                      type: 3,
+                    },
+                  }}
+                >
                   Proyectos a la Medida
                 </Link>
               </li>
               <li>
-                <Link to="/services" serviceValue="4">
+                <Link
+                  to={{
+                    pathname: '/services',
+                    state: {
+                      type: 4,
+                    },
+                  }}
+                >
                   Mobiliario Urbano
                 </Link>
               </li>
