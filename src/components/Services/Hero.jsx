@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import servicesImg from '../../assets/static/services.png';
+import servicesImg from '../../assets/static/services.jpg';
 
 import '../../assets/style/Services/Hero.scss';
 

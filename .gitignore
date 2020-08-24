@@ -1,2 +1,9 @@
 # dependencies
 /node_modules
+
+# production files
+/dist
+
+# firebase files
+/.firebase 
+firebase-debug.log
