@@ -14,8 +14,8 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-main">
         <div className="footer-nav">
-          <Link className="nav-link" to="/services">
-            Servicios
+          <Link className="nav-link" to="/products">
+            Productos
           </Link>
           <Link className="nav-link" to="/#projects">
             Proyectos
@@ -33,7 +33,11 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-social">
-          <a href="/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.facebook.com/urbafix"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img className="social-icon" src={faceLogo} alt="Facebook" />
           </a>
           <a
@@ -46,9 +50,9 @@ const Footer = () => {
           <a href="/" target="_blank" rel="noreferrer">
             <img className="social-icon" src={youtubeLogo} alt="Youtube" />
           </a>
-          <Link to="/contact">
+          <a href="https://bit.ly/3dgAqld" target="_blank" rel="noreferrer">
             <img className="social-icon" src={whatsLogo} alt="Whatsapp" />
-          </Link>
+          </a>
         </div>
       </div>
       <div className="footer-rights">

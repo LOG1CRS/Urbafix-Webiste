@@ -8,26 +8,32 @@ import '../../assets/style/Layout/Navbar.scss';
 
 const Navbar = () => {
   function scrollFunction(screen) {
-    if (screen > 1200) {
-      if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
-      ) {
-        document.getElementById('header').style.backgroundColor = '#fff';
-        document.getElementById('header').style.boxShadow =
-          '1px 1px 4px 0 rgba(0, 0, 0, 0.1)';
-        document.getElementById('nav-links').classList.add('nav-links');
-      } else {
-        document.getElementById('header').style.backgroundColor = 'transparent';
-        document.getElementById('header').style.boxShadow = 'none';
-        document.getElementById('nav-links').classList.remove('nav-links');
-      }
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      document.getElementById('header').style.backgroundColor = '#fff';
+      document.getElementById('header').style.boxShadow =
+        '1px 1px 4px 0 rgba(0, 0, 0, 0.1)';
+      document.getElementById('nav-links').classList.add('nav-links');
+      document.getElementById('navicon').classList.add('navicon-black');
+      document.getElementById('navicon').classList.remove('navicon-white');
+    } else {
+      document.getElementById('header').style.backgroundColor = 'transparent';
+      document.getElementById('header').style.boxShadow = 'none';
+      document.getElementById('nav-links').classList.remove('nav-links');
+      document.getElementById('navicon').classList.remove('navicon-black');
+      document.getElementById('navicon').classList.add('navicon-white');
     }
   }
 
   window.onscroll = function () {
     const screen = document.documentElement.clientWidth;
     scrollFunction(screen);
+  };
+
+  const closeMenu = () => {
+    document.getElementById('menu-btn').checked = false;
   };
 
   return (
@@ -38,17 +44,20 @@ const Navbar = () => {
         </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">
-          <span className="navicon" />
+          <span className="navicon navicon-white" id="navicon" />
         </label>
         <ul className="menu" id="nav-links">
           <li>
-            <Link to="/products">Productos</Link>
+            <Link onClick={() => closeMenu()} to="/products">
+              Productos
+            </Link>
           </li>
           <li className="dropdown">
             <Link to="#">Servicios</Link>
             <ul className="dropdown-content">
               <li>
                 <Link
+                  onClick={() => closeMenu()}
                   to={{
                     pathname: '/services',
                     state: {
@@ -61,6 +70,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  onClick={() => closeMenu()}
                   to={{
                     pathname: '/services',
                     state: {
@@ -73,6 +83,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  onClick={() => closeMenu()}
                   to={{
                     pathname: '/services',
                     state: {
@@ -85,6 +96,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  onClick={() => closeMenu()}
                   to={{
                     pathname: '/services',
                     state: {
@@ -98,16 +110,24 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link to="/#projects">Proyectos</Link>
+            <Link onClick={() => closeMenu()} to="/#projects">
+              Proyectos
+            </Link>
           </li>
           <li>
-            <Link to="/about-us">Nosotros</Link>
+            <Link onClick={() => closeMenu()} to="/about-us">
+              Nosotros
+            </Link>
           </li>
           <li>
-            <Link to="/not-found">Blog</Link>
+            <Link onClick={() => closeMenu()} to="/not-found">
+              Blog
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contacto</Link>
+            <Link onClick={() => closeMenu()} to="/contact">
+              Contacto
+            </Link>
           </li>
         </ul>
       </div>

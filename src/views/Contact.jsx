@@ -64,7 +64,7 @@ const Contact = () => {
           <div className="inputs">
             <div className="input-space">
               <input
-                type="email"
+                type="mail"
                 className="input-field"
                 required="require"
                 autoComplete="ignore"
