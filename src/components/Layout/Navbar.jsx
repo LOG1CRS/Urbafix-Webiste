@@ -48,12 +48,18 @@ const Navbar = () => {
         </label>
         <ul className="menu" id="nav-links">
           <li>
-            <Link onClick={() => closeMenu()} to="/products">
+            <Link
+              className="navbar-item"
+              onClick={() => closeMenu()}
+              to="/products"
+            >
               Productos
             </Link>
           </li>
           <li className="dropdown">
-            <Link to="#">Servicios</Link>
+            <Link className="navbar-item" to="#">
+              Servicios
+            </Link>
             <ul className="dropdown-content">
               <li>
                 <Link
@@ -110,22 +116,38 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link onClick={() => closeMenu()} to="/#projects">
+            <Link
+              className="navbar-item"
+              onClick={() => closeMenu()}
+              to="/#projects"
+            >
               Proyectos
             </Link>
           </li>
           <li>
-            <Link onClick={() => closeMenu()} to="/about-us">
+            <Link
+              className="navbar-item"
+              onClick={() => closeMenu()}
+              to="/about-us"
+            >
               Nosotros
             </Link>
           </li>
           <li>
-            <Link onClick={() => closeMenu()} to="/not-found">
+            <Link
+              className="navbar-item"
+              onClick={() => closeMenu()}
+              to="/not-found"
+            >
               Blog
             </Link>
           </li>
           <li>
-            <Link onClick={() => closeMenu()} to="/contact">
+            <Link
+              className="navbar-item"
+              onClick={() => closeMenu()}
+              to="/contact"
+            >
               Contacto
             </Link>
           </li>

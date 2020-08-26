@@ -75,69 +75,6 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .who-is-urbafix {
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-  }
-
-  .who-main {
-    background-image: none;
-    width: 100%;
-    opacity: 1;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100%;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .who-text-container {
-    width: 100%;
-    height: 770px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 70% 15%;
-    justify-items: left;
-  }
-
-  .who-image-container {
-    display: flex;
-    align-items: center;
-  }
-
-  .who-img {
-    width: 100%;
-  }
-
-  .who-title h2 {
-    font-size: 80px;
-    margin-top: 0px;
-    margin-left: 30px;
-  }
-
-  .who-text p {
-    font-size: 40px;
-    text-align: left;
-    padding: 30px;
-  }
-
-  .who-button {
-    margin-left: 30px;
-    width: 350px !important;
-    height: 60px !important;
-    font-size: 22px !important;
-  }
-
-  .who-button-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-  }
-}
-
 @media only screen and (min-width: 1020px) and (max-width: 1030px) {
   .who-is-urbafix {
     height: 800px;
@@ -164,7 +101,7 @@
   }
 }
 
-@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+@media only screen and (min-width: 1200px) {
   .who-is-urbafix {
     width: 100%;
     height: 100vh;
@@ -217,6 +154,69 @@
     width: 250px !important;
     height: 40px !important;
     font-size: 18px !important;
+  }
+
+  .who-button-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .who-is-urbafix {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+  }
+
+  .who-main {
+    background-image: none;
+    width: 100%;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .who-text-container {
+    width: 100%;
+    height: 770px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    justify-items: left;
+  }
+
+  .who-image-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .who-img {
+    width: 100%;
+  }
+
+  .who-title h2 {
+    font-size: 80px;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  .who-text p {
+    font-size: 40px;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .who-button {
+    margin-left: 30px;
+    width: 350px !important;
+    height: 60px !important;
+    font-size: 22px !important;
   }
 
   .who-button-container {

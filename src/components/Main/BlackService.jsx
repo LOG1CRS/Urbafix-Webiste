@@ -1,4 +1,6 @@
+/* eslint-disable comma-dangle */
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../../assets/style/Main/BlackService.scss';
 
@@ -10,6 +12,7 @@ const BlackService = ({ type }) => {
   const [mainImg, setMainImg] = useState();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
+  // const [address, setAddress] = useState('');
 
   useEffect(() => {
     switch (type) {
@@ -19,6 +22,12 @@ const BlackService = ({ type }) => {
         setDescription(
           'Proyectos que cumplen con las normas mundiales de calidad.'
         );
+        // setAddress({
+        //   pathname: '/services',
+        //   state: {
+        //     type: 1,
+        //   },
+        // });
         break;
       case 'proyectos':
         setTitle('PROYECTOS A LA MEDIDA');
@@ -26,6 +35,12 @@ const BlackService = ({ type }) => {
         setDescription(
           'Desarrollo de proyectos de acuerdo a las necesidades y especificaciones del cliente.'
         );
+        // setAddress({
+        //   pathname: '/services',
+        //   state: {
+        //     type: 3,
+        //   },
+        // });
         break;
       case 'productos':
         setTitle('PRODUCTOS');
@@ -33,6 +48,9 @@ const BlackService = ({ type }) => {
         setDescription(
           'Topes para estacionamiento, reductores  de velocidad, protectores columna y pared. Productos fabricados 100 % a partir de hule reciclado.'
         );
+        // setAddress({
+        //   pathname: '/products',
+        // });
         break;
     }
   });
@@ -44,9 +62,11 @@ const BlackService = ({ type }) => {
           <h3>{title}</h3>
           <div className="service-line" />
           <p>{description}</p>
+          {/* <Link to={address}> */}
           <button type="button" className="button-primary">
             Conocer Más
           </button>
+          {/* </Link> */}
         </div>
       </div>
       <div

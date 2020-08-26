@@ -105,6 +105,24 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .nav-link {
+    font-size: 19px;
+  }
+
+  .social-icon {
+    width: 60px;
+  }
+
+  .footer-logo img {
+    width: 75px;
+  }
+
+  .footer-rights p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
   .footer {
     width: 100%;
     height: 220px;
@@ -124,23 +142,5 @@
 
   .social-icon {
     width: 75px;
-  }
-}
-
-@media only screen and (min-width: 1275px) and (max-width: 1285px) {
-  .nav-link {
-    font-size: 19px;
-  }
-
-  .social-icon {
-    width: 65px;
-  }
-
-  .footer-logo img {
-    width: 100px;
-  }
-
-  .footer-rights p {
-    font-size: 10px;
   }
 }

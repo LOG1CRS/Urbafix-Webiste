@@ -281,6 +281,45 @@
   }
 }
 
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .contact {
+    height: 100vh;
+  }
+
+  .contact-title {
+    padding-left: 20px;
+  }
+
+  .contact-title h1 {
+    font-size: 105px;
+  }
+
+  .contact-container {
+    width: 100%;
+    height: 1300px;
+    grid-template-rows: 160px 460px 260px 160px 260px;
+  }
+
+  .description {
+    padding-left: 12px;
+    font-size: 20px;
+  }
+
+  .icon i {
+    font-size: 45px;
+  }
+
+  .input-label {
+    font-size: 20px;
+  }
+
+  .input-space input {
+    width: 400px;
+    border-bottom: 3px solid $white-general-color;
+    font-size: 20px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .contact {
     width: 100%;
@@ -398,28 +437,57 @@
   }
 }
 
-@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+@media only screen and (min-width: 1600px) {
   .contact {
+    width: 100%;
     height: 100vh;
-  }
-
-  .contact-title {
-    padding-left: 20px;
-  }
-
-  .contact-title h1 {
-    font-size: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact-container {
-    width: 100%;
-    height: 1300px;
-    grid-template-rows: 160px 460px 260px 160px 260px;
+    margin-top: 70px;
   }
 
-  .description {
-    padding-left: 12px;
-    font-size: 20px;
+  .contact-title h1 {
+    font-size: 85px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .contact-container {
+    width: 1000px;
+    height: 700px;
+    grid-template-rows: 80px 100px 250px 220px 50px;
+  }
+
+  .contact-title {
+    order: 1;
+    padding-left: 10px;
+  }
+
+  .contact-icons {
+    order: 2;
+  }
+
+  .contact-inputs {
+    order: 3;
+  }
+
+  .contact-message {
+    order: 4;
+  }
+
+  .contact-button {
+    justify-content: flex-end;
+    padding-right: 25px;
+  }
+
+  .button-primary {
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
   }
 
   .icon i {
@@ -427,35 +495,61 @@
   }
 
   .input-label {
-    font-size: 20px;
-  }
-
-  .input-space input {
-    width: 400px;
-    border-bottom: 3px solid $white-general-color;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 1275px) and (max-width: 1285px) {
-  .contact-container {
-    width: 1000px;
-    height: 570px;
-    grid-template-rows: 50px 100px 220px 150px 50px;
-  }
-
-  .contact-title h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
-    margin-top: 0;
-  }
-
-  .icon i {
-    font-size: 40px;
+    font-size: 19px;
   }
 
   .description {
     padding-left: 10px;
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .input-space input {
+    font-size: 19px;
+    width: 440px;
+  }
+
+  .input-space {
+    padding-left: 25px;
+  }
+
+  .contact-message textarea {
+    font-size: 19px !important;
+  }
+
+  .contact-message textarea::-webkit-input-placeholder {
+    font-size: 19px;
+  }
+
+  .contact-message textarea::-moz-placeholder {
+    font-size: 19px;
+  }
+
+  .contact-message textarea:-ms-input-placeholder {
+    font-size: 19px;
+  }
+
+  .contact-message textarea::-ms-input-placeholder {
+    font-size: 19px;
+  }
+
+  .contact-message textarea::placeholder {
+    font-size: 19px;
+  }
+
+  .contact-message textarea {
+    font-size: 15px;
+  }
+
+  .input-label {
+    padding-left: 25px;
+    padding-bottom: 15px;
+    font-size: 17px;
+  }
+
+  .input-space input:focus + .input-label,
+  .input-space input:valid + .input-label {
+    top: -5px;
+    font-size: 15px;
+    transform: translateY(0);
   }
 }

@@ -47,21 +47,6 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .about-us h1 {
-    font-size: 110px;
-    padding-bottom: 40px;
-  }
-
-  .container-text {
-    width: 1000px;
-  }
-
-  .about-us p {
-    font-size: 35px;
-  }
-}
-
 @media only screen and (min-width: 1020px) and (max-width: 1030px) {
   .about-us h1 {
     font-size: 120px;
@@ -77,7 +62,7 @@
   }
 }
 
-@media only screen and (min-width: 1275px) and (max-width: 1285px) {
+@media only screen and (min-width: 1200px) {
   .about-us h1 {
     font-size: 90px;
     padding-bottom: 50px;
@@ -89,5 +74,20 @@
 
   .about-us p {
     font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about-us h1 {
+    font-size: 110px;
+    padding-bottom: 40px;
+  }
+
+  .container-text {
+    width: 1000px;
+  }
+
+  .about-us p {
+    font-size: 35px;
   }
 }

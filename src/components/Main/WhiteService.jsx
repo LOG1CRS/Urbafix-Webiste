@@ -1,4 +1,6 @@
+/* eslint-disable comma-dangle */
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../../assets/style/Main/WhiteService.scss';
 
@@ -9,6 +11,7 @@ const WhiteService = ({ type }) => {
   const [mainImg, setMainImg] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
+  const [address, setAddress] = useState('');
 
   useEffect(() => {
     switch (type) {
@@ -18,6 +21,13 @@ const WhiteService = ({ type }) => {
         setDescription(
           'Soluciones en área de señalización vertical, horizontal y seguridad vial.'
         );
+        // setAddress({
+        //   pathname: '/services',
+        //   state: {
+        //     type: 2,
+        //   },
+        // });
+        setAddress('/services');
         break;
       case 'mobiliario':
         setTitle('MOBILIARIO URBANO');
@@ -25,6 +35,13 @@ const WhiteService = ({ type }) => {
         setDescription(
           'Equipamos y diseñamos espacios públicos, escuelas y centros comerciales con el mejor mobiliario.'
         );
+        // setAddress({
+        //   pathname: '/services',
+        //   state: {
+        //     type: 4,
+        //   },
+        // });
+        setAddress('/services');
         break;
     }
   });
@@ -43,9 +60,11 @@ const WhiteService = ({ type }) => {
           <h3>{title}</h3>
           <div className="service-line" />
           <p>{description}</p>
-          <button type="button" className="button-primary">
-            Conocer Más
-          </button>
+          <Link to={address}>
+            <button type="button" className="button-primary">
+              Conocer Más
+            </button>
+          </Link>
         </div>
       </div>
     </div>

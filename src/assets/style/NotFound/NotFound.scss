@@ -50,6 +50,22 @@
 
 @media only screen and (min-width: 1200px) {
   .NotFound h1 {
+    font-size: 130px;
+  }
+
+  .NotFound h3 {
+    margin-top: -25px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .button-primary {
+    width: 170px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .NotFound h1 {
     font-size: 200px;
   }
 
