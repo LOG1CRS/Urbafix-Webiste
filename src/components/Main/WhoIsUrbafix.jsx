@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../../assets/style/Main/WhoIsUrbafix.scss';
 
@@ -29,9 +30,11 @@ const WhoIsUrbafix = () => {
             </p>
           </div>
           <div className="who-button-container">
-            <button type="button" className="button-primary who-button">
-              Acerca de nosotros
-            </button>
+            <Link className="link-clear" to="/about-us">
+              <button type="button" className="button-primary who-button">
+                Acerca de nosotros
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@
   display: none;
 }
 
-a {
+.navbar-item {
   font-family: $roboto-font;
   font-weight: $text-wght;
   font-size: 17px;
@@ -43,6 +43,8 @@ a {
 .dropdown-content a {
   color: black;
   text-decoration: none;
+  font-family: $roboto-font;
+  font-weight: $text-wght;
   font-size: 15px;
 }
 
@@ -171,7 +173,7 @@ a {
     height: 70px;
   }
 
-  a {
+  .navbar-item {
     color: $white-general-color;
   }
 
@@ -256,10 +258,6 @@ a {
 @media only screen and (min-width: 1400px) {
   .header {
     height: 80px;
-  }
-
-  a {
-    color: $white-general-color;
   }
 
   .navbar-item {
@@ -348,10 +346,6 @@ a {
   .header {
     height: 90px;
     background-color: transparent;
-  }
-
-  a {
-    color: $white-general-color;
   }
 
   .navbar-item {

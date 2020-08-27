@@ -48,9 +48,6 @@ const WhiteService = ({ type }) => {
 
   return (
     <div className="white-service">
-      <div className="white-service-img-container">
-        <img className="white-service-img" src={mainImg} alt="service" />
-      </div>
       <div
         className="white-service-img-mobile"
         style={{ backgroundImage: `url(${mainImg})` }}
@@ -60,7 +57,7 @@ const WhiteService = ({ type }) => {
           <h3>{title}</h3>
           <div className="service-line" />
           <p>{description}</p>
-          <Link to={address}>
+          <Link className="link-clear" to={address}>
             <button type="button" className="button-primary">
               Conocer Más
             </button>

@@ -12,7 +12,7 @@ const BlackService = ({ type }) => {
   const [mainImg, setMainImg] = useState();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  // const [address, setAddress] = useState('');
+  const [address, setAddress] = useState('');
 
   useEffect(() => {
     switch (type) {
@@ -62,20 +62,17 @@ const BlackService = ({ type }) => {
           <h3>{title}</h3>
           <div className="service-line" />
           <p>{description}</p>
-          {/* <Link to={address}> */}
-          <button type="button" className="button-primary">
-            Conocer Más
-          </button>
-          {/* </Link> */}
+          <Link className="link-clear" to={address}>
+            <button type="button" className="button-primary">
+              Conocer Más
+            </button>
+          </Link>
         </div>
       </div>
       <div
         className="black-service-img-mobile"
         style={{ backgroundImage: `url(${mainImg})` }}
       />
-      <div className="black-service-img-container">
-        <img className="black-service-img" src={mainImg} alt="service" />
-      </div>
     </div>
   );
 };
