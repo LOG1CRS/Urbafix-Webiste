@@ -330,19 +330,19 @@
   }
 
   .contact-container {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   .contact-title h1 {
-    font-size: 85px;
-    margin-bottom: 20px;
     margin-top: 0;
+    font-size: 70px;
   }
 
   .contact-container {
     width: 1000px;
-    height: 700px;
-    grid-template-rows: 80px 100px 250px 220px 50px;
+    height: 550px;
+    grid-template-columns: 100%;
+    grid-template-rows: 75px 75px 200px 150px 50px;
   }
 
   .contact-title {
@@ -351,6 +351,7 @@
   }
 
   .contact-icons {
+    padding-top: 40px;
     order: 2;
   }
 
@@ -364,6 +365,7 @@
 
   .contact-button {
     justify-content: flex-end;
+    padding-top: 30px;
     padding-right: 25px;
   }
 
@@ -374,20 +376,20 @@
   }
 
   .icon i {
-    font-size: 45px;
+    font-size: 35px;
   }
 
   .input-label {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .description {
-    padding-left: 10px;
-    font-size: 20px;
+    padding-left: 30px;
+    font-size: 18px;
   }
 
   .input-space input {
-    font-size: 19px;
+    font-size: 15px;
     width: 440px;
   }
 
@@ -396,27 +398,27 @@
   }
 
   .contact-message textarea {
-    font-size: 19px !important;
+    font-size: 15px !important;
   }
 
   .contact-message textarea::-webkit-input-placeholder {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .contact-message textarea::-moz-placeholder {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .contact-message textarea:-ms-input-placeholder {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .contact-message textarea::-ms-input-placeholder {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .contact-message textarea::placeholder {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .contact-message textarea {
@@ -426,7 +428,7 @@
   .input-label {
     padding-left: 25px;
     padding-bottom: 15px;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .input-space input:focus + .input-label,

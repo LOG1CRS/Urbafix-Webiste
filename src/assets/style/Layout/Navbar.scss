@@ -168,6 +168,93 @@ a {
 
 @media only screen and (min-width: 1200px) {
   .header {
+    height: 70px;
+  }
+
+  a {
+    color: $white-general-color;
+  }
+
+  .navbar-item {
+    font-size: 17px !important;
+  }
+
+  .header ul {
+    background-color: transparent;
+  }
+
+  .nav-logo {
+    margin-top: 3px;
+    margin-left: 20px;
+    width: 55px;
+  }
+
+  .container {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #fff !important;
+    right: 420px;
+    max-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 25px;
+    border-bottom: 0;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    a {
+      color: black;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .header {
     height: 80px;
   }
 

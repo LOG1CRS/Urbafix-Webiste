@@ -106,6 +106,26 @@
 
 @media only screen and (min-width: 1200px) {
   .nav-link {
+    font-size: 17px;
+  }
+
+  .social-icon {
+    margin-top: 7px;
+    width: 50px;
+  }
+
+  .footer-logo img {
+    margin-top: 7px;
+    width: 65px;
+  }
+
+  .footer-rights p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .nav-link {
     font-size: 19px;
   }
 

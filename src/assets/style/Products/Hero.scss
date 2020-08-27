@@ -65,6 +65,18 @@
 
 @media only screen and (min-width: 1200px) {
   .products-container h1 {
+    font-size: 50px;
+  }
+
+  .products-button {
+    width: 130px;
+    height: 33px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .products-container h1 {
     font-size: 60px;
   }
 }
