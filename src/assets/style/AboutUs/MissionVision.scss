@@ -1,0 +1,162 @@
+@import '../Vars.scss';
+
+.mission-vision {
+  width: 100%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+}
+
+.mission,
+.vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-container {
+  width: 80%;
+  height: 75%;
+  // background-color: $gray-text-color;
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.mission-title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.mission-description p {
+  font-family: $sarabun-font;
+  font-weight: $text-wght;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.mission-title h4 {
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.mission-icon {
+  width: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+  .mission-vision {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+
+  .mission-container {
+    width: 85%;
+    height: 70%;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .mission-container {
+    width: 80%;
+    height: 70%;
+  }
+
+  .mission-description p {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .mission-title h4 {
+    margin-left: 15px;
+    margin-bottom: 7px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mission-container {
+    width: 75%;
+    height: 70%;
+  }
+
+  .mission-description p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .mission-description {
+    padding-left: 75px;
+  }
+
+  .mission-description p {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .mission-title h4 {
+    margin-left: 15px;
+    margin-bottom: 7px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .mission-container {
+    width: 70%;
+    height: 70%;
+  }
+
+  .mission-vision {
+    width: 100%;
+    height: 550px;
+  }
+
+  .mission-description p {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .mission-title h4 {
+    margin-left: 15px;
+    margin-bottom: 7px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .mission-container {
+    width: 70%;
+    height: 60%;
+  }
+
+  .mission-vision {
+    width: 100%;
+    height: 650px;
+  }
+
+  .mission-icon {
+    width: 75px;
+  }
+
+  .mission-description {
+    padding-left: 90px;
+  }
+
+  .mission-description p {
+    font-size: 30px;
+  }
+
+  .mission-title h4 {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+}
