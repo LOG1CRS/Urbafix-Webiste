@@ -57,7 +57,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="dropdown">
-            <Link className="navbar-item" to="#">
+            <Link className="navbar-item disable-link" to="#">
               Servicios
             </Link>
             <ul className="dropdown-content">

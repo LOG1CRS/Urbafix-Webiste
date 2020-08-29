@@ -10,10 +10,12 @@ import Contact from '../views/Contact';
 import Services from '../views/Services';
 import Products from '../views/Products';
 import NotFound from '../views/NotFound';
+import ScrollToTop from '../components/Util/ScrollToTop';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Layout>
         <Switch>
           <Route exact path="/" component={Main} />
