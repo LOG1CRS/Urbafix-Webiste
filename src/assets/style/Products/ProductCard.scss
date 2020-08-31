@@ -1,0 +1,90 @@
+@import '../Vars.scss';
+
+.card {
+  width: 100%;
+  height: 630px;
+}
+
+.product-card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 25% 10% 65%;
+  grid-template-columns: 100%;
+  justify-items: center;
+}
+
+.product-card-title h4 {
+  color: $orange-color;
+  font-family: $roboto-font;
+  font-weight: $text-wght;
+  font-size: 28px;
+}
+
+.product-card-types {
+  padding: 30px;
+}
+
+.product-card-types p {
+  text-align: center;
+  font-family: $sarabun-font;
+  font-weight: $text-wght;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.product-card-img,
+.product-card-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.product-img-container {
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: calc(100% / 3);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1600px) {
+  .card {
+    height: 800px;
+  }
+
+  .product-card {
+    grid-template-rows: 30% 10% 60%;
+  }
+
+  .product-img-container {
+    width: 170px;
+    height: 170px;
+  }
+
+  .product-card-title h4 {
+    font-size: 35px;
+  }
+
+  .product-card-types p {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+}

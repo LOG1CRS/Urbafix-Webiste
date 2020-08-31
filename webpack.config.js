@@ -56,9 +56,9 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    host: '192.168.1.75',
-    port: 8080,
-    disableHostCheck: true,
+    //   host: '192.168.1.75',
+    //   port: 8080,
+    //   disableHostCheck: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
