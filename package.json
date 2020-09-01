@@ -22,6 +22,7 @@
   "dependencies": {
     "re-carousel": "^2.4.0",
     "react": "^16.13.1",
+    "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0"
   },

@@ -1,0 +1,144 @@
+@import '../Vars.scss';
+
+.statistics {
+  width: 100%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 35% 65%;
+}
+
+.statistics-phrase {
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics-phrase h4 {
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.statistics-numbs {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: $gray-background-color;
+}
+
+.statistics-numbs span {
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  color: $white-general-color;
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.statistics-numbs p {
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  color: $orange-color;
+  text-align: center;
+  font-size: 25px;
+}
+
+.statistics-placed,
+.statistics-kilometers,
+.statistics-locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+  .statistics {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .statistics-numbs {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .statistics-numbs span {
+    font-size: 50px;
+  }
+
+  .statistics-numbs p {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .statistics-phrase h4 {
+    font-size: 40px;
+  }
+
+  .statistics-numbs span {
+    font-size: 60px;
+  }
+
+  .statistics-numbs p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .statistics {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .statistics-phrase h4 {
+    font-size: 45px;
+  }
+
+  .statistics-numbs span {
+    font-size: 70px;
+  }
+
+  .statistics-numbs p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .statistics-phrase h4 {
+    font-size: 48px;
+  }
+
+  .statistics-numbs span {
+    font-size: 75px;
+  }
+
+  .statistics-numbs p {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .statistics-phrase h4 {
+    font-size: 70px;
+  }
+
+  .statistics-numbs span {
+    font-size: 105px;
+  }
+
+  .statistics-numbs p {
+    font-size: 45px;
+  }
+}
