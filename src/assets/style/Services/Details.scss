@@ -1,0 +1,73 @@
+@import '../Vars.scss';
+
+.services-details {
+  width: 100%;
+  height: 600px;
+}
+
+.first-details,
+.second-details {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+}
+
+.second-details .detail-text-container {
+  order: 2;
+}
+.second-details .details-photo-container {
+  order: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .first-details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+  .second-details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+
+  .second-details .detail-text-container {
+    order: 1;
+  }
+  .second-details .details-photo-container {
+    order: 2;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .first-details {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+  }
+  .second-details {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+  }
+
+  .second-details .detail-text-container {
+    order: 1;
+  }
+  .second-details .details-photo-container {
+    order: 2;
+  }
+  .services-details {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1600px) {
+}

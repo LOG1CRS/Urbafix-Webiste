@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import Hero from '../components/Services/Hero';
+import ServicesContent from '../components/Services/ServicesContent';
 
 const Services = () => {
   const [type, setType] = useState();
@@ -18,6 +19,7 @@ const Services = () => {
   return (
     <>
       <Hero service={type} />
+      <ServicesContent service={type} />
     </>
   );
 };

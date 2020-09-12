@@ -1,0 +1,71 @@
+@import '../Vars.scss';
+
+.projects {
+  width: 100%;
+  height: 600px;
+  background-color: $white-general-color;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 100%;
+}
+
+.projects-title {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-family: $roboto-font;
+  font-weight: $title-wght;
+  color: $gray-text-color;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  .projects-title {
+    padding-left: 40px;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .projects {
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 100%;
+  }
+
+  .projects-title {
+    padding-left: 40px;
+    font-size: 65px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+  }
+
+  .projects-title {
+    padding-left: 40px;
+    font-size: 55px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .projects-title {
+    padding-left: 40px;
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .projects-title {
+    padding-left: 50px;
+    font-size: 80px;
+  }
+}

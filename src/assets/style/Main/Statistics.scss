@@ -18,9 +18,13 @@
 .statistics-phrase h4 {
   font-family: $roboto-font;
   font-weight: $title-wght;
-  color: black;
+  color: $gray-text-color;
   text-align: center;
   font-size: 30px;
+}
+
+.statistics-phrase h4 strong {
+  color: $orange-color;
 }
 
 .statistics-numbs {

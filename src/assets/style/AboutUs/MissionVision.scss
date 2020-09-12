@@ -25,7 +25,8 @@
 
 .mission-title {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 
 .mission-description p {
@@ -39,9 +40,8 @@
 .mission-title h4 {
   font-family: $roboto-font;
   font-weight: $title-wght;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  font-size: 25px;
+  color: $orange-color;
+  font-size: 28px;
 }
 
 .mission-icon {
@@ -92,18 +92,12 @@
     font-size: 20px;
   }
 
-  .mission-description {
-    padding-left: 75px;
-  }
-
   .mission-description p {
     margin-top: 20px;
     font-size: 22px;
   }
 
   .mission-title h4 {
-    margin-left: 15px;
-    margin-bottom: 7px;
     font-size: 30px;
   }
 }
@@ -125,8 +119,6 @@
   }
 
   .mission-title h4 {
-    margin-left: 15px;
-    margin-bottom: 7px;
     font-size: 30px;
   }
 }
@@ -146,17 +138,11 @@
     width: 75px;
   }
 
-  .mission-description {
-    padding-left: 90px;
-  }
-
   .mission-description p {
     font-size: 30px;
   }
 
   .mission-title h4 {
-    margin-left: 15px;
-    margin-bottom: 10px;
-    font-size: 35px;
+    font-size: 40px;
   }
 }
