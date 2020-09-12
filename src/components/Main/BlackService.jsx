@@ -22,12 +22,12 @@ const BlackService = ({ type }) => {
         setDescription(
           'Proyectos que cumplen con las normas mundiales de calidad.'
         );
-        // setAddress({
-        //   pathname: '/services',
-        //   state: {
-        //     type: 1,
-        //   },
-        // });
+        setAddress({
+          pathname: '/services',
+          state: {
+            type: 1,
+          },
+        });
         break;
       case 'proyectos':
         setTitle('PROYECTOS A LA MEDIDA');
@@ -35,12 +35,12 @@ const BlackService = ({ type }) => {
         setDescription(
           'Desarrollo de proyectos de acuerdo a las necesidades y especificaciones del cliente.'
         );
-        // setAddress({
-        //   pathname: '/services',
-        //   state: {
-        //     type: 3,
-        //   },
-        // });
+        setAddress({
+          pathname: '/services',
+          state: {
+            type: 3,
+          },
+        });
         break;
       case 'productos':
         setTitle('PRODUCTOS');
@@ -48,12 +48,12 @@ const BlackService = ({ type }) => {
         setDescription(
           'Topes para estacionamiento, reductores  de velocidad, protectores columna y pared. Productos fabricados 100 % a partir de hule reciclado.'
         );
-        // setAddress({
-        //   pathname: '/products',
-        // });
+        setAddress({
+          pathname: '/products',
+        });
         break;
     }
-  });
+  }, []);
 
   return (
     <div className="black-service">

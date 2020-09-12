@@ -21,13 +21,12 @@ const WhiteService = ({ type }) => {
         setDescription(
           'Soluciones en área de señalización vertical, horizontal y seguridad vial.'
         );
-        // setAddress({
-        //   pathname: '/services',
-        //   state: {
-        //     type: 2,
-        //   },
-        // });
-        setAddress('/services');
+        setAddress({
+          pathname: '/services',
+          state: {
+            type: 2,
+          },
+        });
         break;
       case 'mobiliario':
         setTitle('MOBILIARIO URBANO');
@@ -35,16 +34,15 @@ const WhiteService = ({ type }) => {
         setDescription(
           'Equipamos y diseñamos espacios públicos, escuelas y centros comerciales con el mejor mobiliario.'
         );
-        // setAddress({
-        //   pathname: '/services',
-        //   state: {
-        //     type: 4,
-        //   },
-        // });
-        setAddress('/services');
+        setAddress({
+          pathname: '/services',
+          state: {
+            type: 4,
+          },
+        });
         break;
     }
-  });
+  }, []);
 
   return (
     <div className="white-service">

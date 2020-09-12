@@ -47,6 +47,11 @@
   background-position: center;
 }
 
+.small-mobile-card {
+  height: 421px;
+  grid-template-rows: 158px 63px 200px;
+}
+
 @media only screen and (min-width: 600px) {
   .card {
     width: 50%;

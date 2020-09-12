@@ -30,7 +30,7 @@ const Badge = ({ type }) => {
         setBackground(badge4);
         break;
     }
-  });
+  }, []);
 
   return (
     <div className="badge">

@@ -1,15 +1,16 @@
 @import '../Vars.scss';
 
-.products-container {
+.products-cards-container {
   display: flex;
   flex-direction: column;
 }
 
 @media only screen and (min-width: 600px) {
-  .products-container {
+  .products-cards-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .card-1 {
@@ -39,7 +40,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .products-container {
+  .products-cards-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

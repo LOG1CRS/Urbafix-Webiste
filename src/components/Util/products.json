@@ -1,0 +1,36 @@
+{
+  "señalamientoVertical": [
+    "Señalamiento preventivo",
+    "Señalamiento restrictivo",
+    "Señalamiento turistico",
+    "Señalamiento de servicios",
+    "Señalamiento informativo",
+    "Señalamiento de información general"
+  ],
+  "dispositivos": [
+    "Reductores de velocidad",
+    "Topes de estacionamiento",
+    "Esquineros"
+  ],
+  "vinilesReflejantes": [
+    "Alta intensidad",
+    "Topes de Alta intensidad fluorescente",
+    "Grado ingeniería prismático "
+  ],
+  "botones": ["Botón hibrido 360", "Botón óptico"],
+  "delineadores": [
+    "Delineador tipo A",
+    "Delineador tipo B",
+    "Delineador tipo C",
+    "Delineadores 55"
+  ],
+  "boyas": [
+    "Boya premium",
+    "Boya solar",
+    "Boya solida",
+    "Boya delineadora",
+    "Mini boya",
+    "Micro boya"
+  ],
+  "marcadorReflectivo": ["Unidireccional", "Bidireccional"]
+}

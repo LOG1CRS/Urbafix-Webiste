@@ -8,7 +8,7 @@ const Phrase = () => {
     <div className="phrase">
       <div className="phrase-container">
         <img className="phrase-logo" src={logoImg} alt="" />
-        <h4>"Grandes Proyectos Para Grandes Ciudades"</h4>
+        <h4>&quot;Grandes Proyectos Para Grandes Ciudades&quot;</h4>
         <p>- Urbafix</p>
       </div>
     </div>

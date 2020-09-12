@@ -25,7 +25,7 @@ const Hero = ({ service }) => {
         setTitle('SEÑALAMIENTO HORIZONTAL');
         break;
     }
-  });
+  }, []);
 
   return (
     <div

@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-rights">
-        <p>© URBAFIX S.A. de C.V. | All Rights Reserved</p>
+        <p>© URBAFIX S.A. de C.V. | Todos los derechos reservados</p>
       </div>
     </div>
   );

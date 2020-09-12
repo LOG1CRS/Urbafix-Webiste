@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from 'react';
 
 import '../../assets/style/Products/ProductCard.scss';
@@ -10,17 +11,9 @@ import boyasImg from '../../assets/static/boyas-service.png';
 import delineadoresImg from '../../assets/static/delineadores-service.png';
 import marcadorImg from '../../assets/static/marcador-service.png';
 
-const ProductCard = ({
-  color,
-  title,
-  type1,
-  type2,
-  type3,
-  type4,
-  type5,
-  type6,
-}) => {
+const ProductCard = ({ color, title, content }) => {
   const [img, setImg] = useState();
+  const [cardHeight, setCardHeight] = useState('');
 
   useEffect(() => {
     switch (title) {
@@ -29,12 +22,14 @@ const ProductCard = ({
         break;
       case 'Dispositivos':
         setImg(dispositivosImg);
+        setCardHeight('small-mobile-card');
         break;
       case 'Viniles Reflejantes':
         setImg(vinilesImg);
         break;
       case 'Botones':
         setImg(botonesImg);
+        setCardHeight('small-mobile-card');
         break;
       case 'Boyas':
         setImg(boyasImg);
@@ -44,12 +39,16 @@ const ProductCard = ({
         break;
       case 'Marcador Reflectivo':
         setImg(marcadorImg);
+        setCardHeight('small-mobile-card');
         break;
     }
-  });
+  }, []);
 
   return (
-    <div className="product-card" style={{ backgroundColor: `${color}` }}>
+    <div
+      className={`product-card ${cardHeight}`}
+      style={{ backgroundColor: `${color}` }}
+    >
       <div className="product-card-img">
         <div
           className="product-img-container"
@@ -60,12 +59,9 @@ const ProductCard = ({
         <h4>{title}</h4>
       </div>
       <div className="product-card-types">
-        <p>{type1}</p>
-        <p>{type2}</p>
-        <p>{type3}</p>
-        <p>{type4}</p>
-        <p>{type5}</p>
-        <p>{type6}</p>
+        {content.map((item, index) => (
+          <p key={index}>{item}</p>
+        ))}
       </div>
     </div>
   );
