@@ -9,7 +9,7 @@ const Projects = () => {
         <h4>PROYECTOS</h4>
       </div>
       <div className="projects-carousel">
-        <p>Carousel</p>
+        <br />
       </div>
     </div>
   );

@@ -1,0 +1,13 @@
+{
+  "home": "/",
+  "aboutUs": "/about-us",
+  "contact": "/contact",
+  "services": "/services",
+  "products": "/products",
+  "projects": "/#projects",
+  "notFound": "/not-found",
+  "facebook": "https://www.facebook.com/urbafix",
+  "instagram": "https://instagram.com/urbafix?igshid=3z298r7zu9yc",
+  "youtube": "/",
+  "whatsapp": "https://bit.ly/3dgAqld"
+}

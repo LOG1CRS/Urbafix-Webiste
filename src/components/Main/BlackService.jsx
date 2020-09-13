@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../../assets/style/Main/BlackService.scss';
+import { services, products } from '../../routes/routes.json';
 
 import horizontalImg from '../../assets/static/horizontal-main-service.png';
 import proyectosImg from '../../assets/static/proyectos-main-service.png';
@@ -23,7 +24,7 @@ const BlackService = ({ type }) => {
           'Proyectos que cumplen con las normas mundiales de calidad.'
         );
         setAddress({
-          pathname: '/services',
+          pathname: services,
           state: {
             type: 1,
           },
@@ -36,7 +37,7 @@ const BlackService = ({ type }) => {
           'Desarrollo de proyectos de acuerdo a las necesidades y especificaciones del cliente.'
         );
         setAddress({
-          pathname: '/services',
+          pathname: services,
           state: {
             type: 3,
           },
@@ -49,7 +50,7 @@ const BlackService = ({ type }) => {
           'Topes para estacionamiento, reductores  de velocidad, protectores columna y pared. Productos fabricados 100 % a partir de hule reciclado.'
         );
         setAddress({
-          pathname: '/products',
+          pathname: products,
         });
         break;
     }

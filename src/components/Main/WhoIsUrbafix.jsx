@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../../assets/style/Main/WhoIsUrbafix.scss';
+import { aboutUs } from '../../routes/routes.json';
 
 import whoImg from '../../assets/static/who-image.png';
 
@@ -30,7 +31,7 @@ const WhoIsUrbafix = () => {
             </p>
           </div>
           <div className="who-button-container">
-            <Link className="link-clear" to="/about-us">
+            <Link className="link-clear" to={aboutUs}>
               <button type="button" className="button-primary who-button">
                 Acerca de nosotros
               </button>

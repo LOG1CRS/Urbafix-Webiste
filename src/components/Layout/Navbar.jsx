@@ -4,6 +4,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/static/urbafix-logo-web.png';
+import {
+  home,
+  aboutUs,
+  contact,
+  products,
+  services,
+  projects,
+  notFound,
+} from '../../routes/routes.json';
 import '../../assets/style/Layout/Navbar.scss';
 
 const Navbar = () => {
@@ -39,7 +48,7 @@ const Navbar = () => {
   return (
     <header className="header" id="header">
       <div className="container">
-        <Link to="/">
+        <Link to={home}>
           <img className="nav-logo" src={logo} alt="Urbafix-logo" />
         </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -51,7 +60,7 @@ const Navbar = () => {
             <Link
               className="navbar-item"
               onClick={() => closeMenu()}
-              to="/products"
+              to={products}
             >
               Productos
             </Link>
@@ -65,7 +74,7 @@ const Navbar = () => {
                 <Link
                   onClick={() => closeMenu()}
                   to={{
-                    pathname: '/services',
+                    pathname: services,
                     state: {
                       type: 1,
                     },
@@ -78,7 +87,7 @@ const Navbar = () => {
                 <Link
                   onClick={() => closeMenu()}
                   to={{
-                    pathname: '/services',
+                    pathname: services,
                     state: {
                       type: 2,
                     },
@@ -91,7 +100,7 @@ const Navbar = () => {
                 <Link
                   onClick={() => closeMenu()}
                   to={{
-                    pathname: '/services',
+                    pathname: services,
                     state: {
                       type: 3,
                     },
@@ -104,7 +113,7 @@ const Navbar = () => {
                 <Link
                   onClick={() => closeMenu()}
                   to={{
-                    pathname: '/services',
+                    pathname: services,
                     state: {
                       type: 4,
                     },
@@ -116,19 +125,19 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link
+            <a
               className="navbar-item"
               onClick={() => closeMenu()}
-              to="/#projects"
+              href={projects}
             >
               Proyectos
-            </Link>
+            </a>
           </li>
           <li>
             <Link
               className="navbar-item"
               onClick={() => closeMenu()}
-              to="/about-us"
+              to={aboutUs}
             >
               Nosotros
             </Link>
@@ -137,7 +146,7 @@ const Navbar = () => {
             <Link
               className="navbar-item"
               onClick={() => closeMenu()}
-              to="/not-found"
+              to={notFound}
             >
               Blog
             </Link>
@@ -146,7 +155,7 @@ const Navbar = () => {
             <Link
               className="navbar-item"
               onClick={() => closeMenu()}
-              to="/contact"
+              to={contact}
             >
               Contacto
             </Link>

@@ -56,6 +56,10 @@
   .card {
     width: 50%;
   }
+
+  .small-mobile-card {
+    height: 630px;
+  }
 }
 
 @media only screen and (min-width: 1020px) and (max-width: 1030px) {
@@ -72,6 +76,10 @@
 
 @media only screen and (min-width: 1600px) {
   .card {
+    height: 800px;
+  }
+
+  .small-mobile-card {
     height: 800px;
   }
 

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../../assets/style/Main/WhiteService.scss';
+import { services } from '../../routes/routes.json';
 
 import verticalImg from '../../assets/static/vertical-main-service.png';
 import mobiliarioImg from '../../assets/static/mobiliario-main-service.png';
@@ -22,7 +23,7 @@ const WhiteService = ({ type }) => {
           'Soluciones en área de señalización vertical, horizontal y seguridad vial.'
         );
         setAddress({
-          pathname: '/services',
+          pathname: services,
           state: {
             type: 2,
           },
@@ -35,7 +36,7 @@ const WhiteService = ({ type }) => {
           'Equipamos y diseñamos espacios públicos, escuelas y centros comerciales con el mejor mobiliario.'
         );
         setAddress({
-          pathname: '/services',
+          pathname: services,
           state: {
             type: 4,
           },
