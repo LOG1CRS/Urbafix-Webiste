@@ -3,23 +3,35 @@
 .hero-main {
   width: 100%;
   height: 100vh;
-  background-image: url('../../static/hero-wallpaper.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: $gray-background-color;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.hero-main-content {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1 !important;
 }
 
 .hero-main-container {
-  width: 320px;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
 .hero-main-title {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
   color: $white-general-color;
   text-align: center;
   font-family: $sarabun-font;
@@ -43,12 +55,11 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .hero-main-container {
-    width: 520px;
-  }
-
   .hero-main-title {
-    font-size: 45px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+    font-size: 50px;
     margin-bottom: 35px;
   }
 
@@ -64,11 +75,10 @@
 }
 
 @media only screen and (min-width: 1020px) and (max-width: 1030px) {
-  .hero-main-container {
-    width: 700px;
-  }
-
   .hero-main-title {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 30px;
     font-size: 70px;
     margin-bottom: 40px;
   }
@@ -86,11 +96,10 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .hero-main-container {
-    width: 640px;
-  }
-
   .hero-main-title {
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 30px;
     font-size: 44px;
     margin-bottom: 25px;
   }
@@ -108,10 +117,6 @@
 }
 
 @media only screen and (min-width: 1400px) {
-  .hero-main-container {
-    width: 700px;
-  }
-
   .hero-main-title {
     font-size: 50px;
     margin-bottom: 25px;
@@ -130,11 +135,10 @@
 }
 
 @media only screen and (min-width: 1600px) {
-  .hero-main-container {
-    width: 880px;
-  }
-
   .hero-main-title {
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 30px;
     font-size: 60px;
     margin-bottom: 40px;
   }

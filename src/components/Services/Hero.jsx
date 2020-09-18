@@ -1,37 +1,43 @@
 import React, { useState, useEffect } from 'react';
 
-import servicesImg from '../../assets/static/services.jpg';
+import mobiliarioImg from '../../assets/static/services.jpg';
+import horizontalImg from '../../assets/static/hero-wallpaper-3.jpg';
+import verticalImg from '../../assets/static/vertical-service.jpg';
+import proyectosImg from '../../assets/static/proyectos-service.jpg';
 
 import '../../assets/style/Services/Hero.scss';
 
 const Hero = ({ service }) => {
   const [title, setTitle] = useState('');
+  const [wallpaper, setWallpaper] = useState(null);
 
   useEffect(() => {
     switch (service) {
       case 1:
         setTitle('SEÑALAMIENTO HORIZONTAL');
+        setWallpaper(horizontalImg);
         break;
       case 2:
         setTitle('SEÑALAMIENTO VERTICAL');
+        setWallpaper(verticalImg);
         break;
       case 3:
         setTitle('PROYECTOS A LA MEDIDA');
+        setWallpaper(proyectosImg);
         break;
       case 4:
         setTitle('MOBILIARIO URBANO');
+        setWallpaper(mobiliarioImg);
         break;
       default:
         setTitle('SEÑALAMIENTO HORIZONTAL');
+        setWallpaper(horizontalImg);
         break;
     }
-  }, []);
+  });
 
   return (
-    <div
-      className="services"
-      style={{ backgroundImage: `url(${servicesImg})` }}
-    >
+    <div className="services" style={{ backgroundImage: `url(${wallpaper})` }}>
       <div className="services-hero-space">
         <div className="services-hero-container">
           <h2>URBAFIX</h2>
