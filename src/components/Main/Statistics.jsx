@@ -19,7 +19,7 @@ const Statistics = () => {
       </div>
       <div className="statistics-numbs">
         <div className="statistics-placed">
-          <CountUp end={490} duration={3}>
+          <CountUp end={5800} duration={3}>
             {({ countUpRef, start }) => (
               <VisibilitySensor onChange={start} scrollCheck delayedCall>
                 <span ref={countUpRef} />
@@ -29,17 +29,17 @@ const Statistics = () => {
           <p>Señales Colocadas</p>
         </div>
         <div className="statistics-kilometers">
-          <CountUp end={10480} duration={3}>
+          <CountUp end={50000} duration={3}>
             {({ countUpRef, start }) => (
               <VisibilitySensor onChange={start} scrollCheck delayedCall>
                 <span ref={countUpRef} />
               </VisibilitySensor>
             )}
           </CountUp>
-          <p>Kilometros Pintados.</p>
+          <p>Metros Lineales Pintados.</p>
         </div>
         <div className="statistics-locations">
-          <CountUp end={50} duration={5}>
+          <CountUp end={55} duration={5}>
             {({ countUpRef, start }) => (
               <VisibilitySensor onChange={start} scrollCheck delayedCall>
                 <span ref={countUpRef} />

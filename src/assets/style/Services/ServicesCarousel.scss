@@ -1,0 +1,45 @@
+@import '../Vars.scss';
+
+.services-carousel-container {
+  padding: 30px 0 30px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.services-carousel {
+  width: 100%;
+  // max-height: 400px !important;
+}
+
+.slide-service {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.carousel.carousel-slider {
+  // height: 250px;
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .services-carousel-container {
+    padding: 100px 0 100px 0;
+  }
+
+  .carousel.carousel-slider {
+    max-height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1600px) {
+}

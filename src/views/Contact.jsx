@@ -1,9 +1,18 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import '../assets/style/Contact/Contact.scss';
 
 const Contact = () => {
+  const userValues = useLocation().state;
+
+  useEffect(() => {
+    if (userValues !== null) {
+      console.log(userValues);
+    }
+  }, []);
+
   return (
     <div className="contact">
       <div className="contact-container">

@@ -13,6 +13,7 @@ const Hero = () => {
   return (
     <Carousel
       autoPlay
+      // stopOnHover
       showThumbs={false}
       showStatus={false}
       interval={4500}

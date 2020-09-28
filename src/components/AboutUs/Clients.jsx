@@ -1,18 +1,15 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
+import clientsImg from './clientsImg';
 
 import '../../assets/style/AboutUs/Clients.scss';
-
-import clientsImg from '../../assets/static/clients.png';
 
 const Clients = () => {
   return (
     <div className="clients">
-      <div className="clients-img-large">
-        <img className="clients-img" src={clientsImg} alt="" />
-      </div>
-      <div className="clients-img-mobile">
-        <img className="clients-img" src={clientsImg} alt="" />
-      </div>
+      {clientsImg.map((item, index) => (
+        <img key={index} src={item} className="clients-img" alt="client" />
+      ))}
     </div>
   );
 };

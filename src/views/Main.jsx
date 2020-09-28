@@ -6,6 +6,7 @@ import WhiteService from '../components/Main/WhiteService';
 import Statistics from '../components/Main/Statistics';
 import Projects from '../components/Main/Projects';
 import Questions from '../components/Main/Questions';
+import MainSelector from '../components/Main/MainSelector';
 
 const Main = () => {
   return (
@@ -20,6 +21,7 @@ const Main = () => {
       <Statistics />
       <Projects />
       <Questions />
+      <MainSelector />
     </>
   );
 };

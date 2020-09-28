@@ -11,12 +11,12 @@ import Contact from '../views/Contact';
 import Services from '../views/Services';
 import Products from '../views/Products';
 import NotFound from '../views/NotFound';
-import ScrollToTop from '../components/Util/ScrollToTop';
+import RouterScrollToTop from '../components/Util/RouterScrollToTop';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <ScrollToTop />
+      <RouterScrollToTop />
       <Layout>
         <Switch>
           <Route exact path={home} component={Main} />
