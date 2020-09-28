@@ -13,7 +13,7 @@ const WhoIsUrbafix = () => {
         <div className="who-image-container">
           <img className="who-img" src={whoImg} alt="who-is-urbafix" />
         </div>
-        <div className="who-text-container">
+        <div className="who-text-container" data-aos="fade-up">
           <div className="who-title">
             <h2>¿QUIÉN ES URBAFIX?</h2>
           </div>

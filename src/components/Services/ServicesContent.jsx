@@ -5,7 +5,7 @@ import ServicesCarousel from './ServicesCarousel';
 const ServicesContent = ({ service }) => {
   return (
     <>
-      {/* <Details service={service} /> */}
+      <Details service={service} />
       <ServicesCarousel service={service} />
     </>
   );

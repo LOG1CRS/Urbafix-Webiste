@@ -34,7 +34,7 @@ const Hero = ({ service }) => {
         setWallpaper(horizontalImg);
         break;
     }
-  });
+  }, [service]);
 
   return (
     <div className="services" style={{ backgroundImage: `url(${wallpaper})` }}>

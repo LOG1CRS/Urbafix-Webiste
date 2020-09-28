@@ -59,7 +59,7 @@ const BlackService = ({ type }) => {
   return (
     <div className="black-service">
       <div className="black-service-space">
-        <div className="black-service-content">
+        <div className="black-service-content" data-aos="fade-up">
           <h3>{title}</h3>
           <div className="service-line" />
           <p>{description}</p>

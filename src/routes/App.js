@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import '../assets/style/App.scss';
 import { home, aboutUs, contact, products, services } from './routes.json';
@@ -14,6 +16,9 @@ import NotFound from '../views/NotFound';
 import RouterScrollToTop from '../components/Util/RouterScrollToTop';
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <BrowserRouter>
       <RouterScrollToTop />
