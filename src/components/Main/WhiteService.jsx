@@ -52,7 +52,7 @@ const WhiteService = ({ type }) => {
         style={{ backgroundImage: `url(${mainImg})` }}
       />
       <div className="white-service-space">
-        <div className="white-service-content" data-aos="fade-up">
+        <div className="white-service-content" data-aos="zoom-in-left">
           <h3>{title}</h3>
           <div className="service-line" />
           <p>{description}</p>

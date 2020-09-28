@@ -6,7 +6,7 @@ const MissionVision = () => {
   return (
     <div className="mission-vision">
       <div className="mission">
-        <div className="mission-container">
+        <div className="mission-container" data-aos="zoom-in-right">
           <div className="mission-title">
             <h4>MISIÓN</h4>
           </div>
@@ -21,7 +21,7 @@ const MissionVision = () => {
         </div>
       </div>
       <div className="vision">
-        <div className="mission-container">
+        <div className="mission-container" data-aos="zoom-in-left">
           <div className="mission-title">
             <h4 className="vision-title">VISIÓN</h4>
           </div>

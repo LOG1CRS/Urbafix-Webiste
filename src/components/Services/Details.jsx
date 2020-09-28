@@ -154,10 +154,14 @@ const Details = (props) => {
         <div className="details-photo-container">
           <img src={firstImage} alt="service" className="details-img" />
         </div>
-        <div className="detail-text-container">{firstContent}</div>
+        <div className="detail-text-container" data-aos="fade-up">
+          {firstContent}
+        </div>
       </div>
       <div className="services-details second-details">
-        <div className="detail-text-container">{secondContent}</div>
+        <div className="detail-text-container" data-aos="fade-up">
+          {secondContent}
+        </div>
         <div className="details-photo-container">
           <img src={secondImage} alt="service" className="details-img" />
         </div>

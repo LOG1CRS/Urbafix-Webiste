@@ -39,7 +39,12 @@ const Hero = ({ service }) => {
   return (
     <div className="services" style={{ backgroundImage: `url(${wallpaper})` }}>
       <div className="services-hero-space">
-        <div className="services-hero-container">
+        <div
+          className="services-hero-container"
+          data-aos="fade-zoom-in"
+          data-aos-offset="0"
+          data-aos-delay="100"
+        >
           <h2>URBAFIX</h2>
           <h1>{title}</h1>
         </div>

@@ -5,7 +5,12 @@ import process from '../../assets/static/Process.jpg';
 
 const Process = () => {
   return (
-    <div className="process">
+    <div
+      className="process"
+      data-aos="fade-zoom-in"
+      data-aos-offset="0"
+      data-aos-delay="300"
+    >
       <img className="process-img" src={process} alt="" />
     </div>
   );

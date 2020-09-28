@@ -7,11 +7,11 @@ const Solutions = () => {
   return (
     <div className="solutions">
       <div className="solutions-container">
-        <h4>
-          SOLUCIONES <strong>MODERNAS</strong> CON ALTOS ESTÁNDARES DE{' '}
+        <h4 data-aos="zoom-in" data-aos-easing="linear">
+          SOLUCIONES <strong>MODERNAS</strong> CON ALTOS ESTÁNDARES DE
           <strong>CALIDAD</strong>.
         </h4>
-        <p>
+        <p data-aos="fade-up">
           Buscamos y creamos proyectos de carácter contemporáneo, de acuerdo a
           las normas de seguridad vial internacionales y con una estética
           moderna acorde a los tiempos que vivimos.

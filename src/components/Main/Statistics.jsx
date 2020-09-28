@@ -9,7 +9,7 @@ const Statistics = () => {
   return (
     <div className="statistics">
       <div className="statistics-phrase">
-        <h4 data-aos="zoom-in">
+        <h4 data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="300">
           “NUESTRO TRABAJO ES EL REFLEJO DE LA
           <br />
           <strong>MODERNIZACIÓN </strong>

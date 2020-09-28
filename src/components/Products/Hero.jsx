@@ -9,7 +9,12 @@ const Hero = () => {
     <div className="hero">
       <NavbarSpace />
       <div className="products-container">
-        <div className="products-content">
+        <div
+          className="products-content"
+          data-aos="fade-zoom-in"
+          data-aos-offset="0"
+          data-aos-delay="100"
+        >
           <h1>PRODUCTOS</h1>
           <a href="#products" className="button-primary products-button">
             Conocer Más
