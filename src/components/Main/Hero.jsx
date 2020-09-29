@@ -21,7 +21,10 @@ const Hero = () => {
       infiniteLoop
       className="hero-main"
     >
-      <div style={{ backgroundImage: `url(${wallpaper3})` }} className="slide">
+      <div
+        style={{ backgroundImage: `url(${wallpaper3})` }}
+        className="slide-main"
+      >
         <div className="hero-main-content">
           <div className="hero-main-container">
             <h1 className="hero-main-title">

@@ -19,11 +19,9 @@ const ServicesCarousel = (props) => {
         setImages(verticalImages);
         break;
       case 3:
-        // setTitle('PROYECTOS A LA MEDIDA');
         setImages(horizontalImages);
         break;
       case 4:
-        // setTitle('MOBILIARIO URBANO');
         setImages(verticalImages);
         break;
       default:
@@ -49,12 +47,10 @@ const ServicesCarousel = (props) => {
         {images.map((item, key) => (
           <div
             key={key}
-            // style={{ backgroundImage: `url(${item})` }}
+            style={{ backgroundImage: `url(${item})` }}
             // className="slide-service"
-            className="services-carousel"
-          >
-            <img src={item} alt="" className="carousel-img" />
-          </div>
+            className="services-carousel-img"
+          />
         ))}
       </Carousel>
     </div>

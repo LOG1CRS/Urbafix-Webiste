@@ -36,7 +36,7 @@ const Statistics = () => {
               </VisibilitySensor>
             )}
           </CountUp>
-          <p>Metros Lineales Pintados.</p>
+          <p>Metros Lineales Pintados</p>
         </div>
         <div className="statistics-locations">
           <CountUp end={55} duration={5}>
