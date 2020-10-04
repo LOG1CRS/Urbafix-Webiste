@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 import '../../assets/style/Main/Hero.scss';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import wallpaper1 from '../../assets/static/Contact-wallpaper.png';
+import wallpaper1 from '../../assets/static/Contact-wallpaper.jpg';
 import wallpaper2 from '../../assets/static/hero-wallpaper-2.jpg';
 import wallpaper3 from '../../assets/static/hero-wallpaper-3.jpg';
 import wallpaper4 from '../../assets/static/hero-wallpaper-4.jpg';
