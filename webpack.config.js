@@ -64,6 +64,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: './index.html',
+      favicon: './src/assets/static/urbafix-logo-web.png',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
