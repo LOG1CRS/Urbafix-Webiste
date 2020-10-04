@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { contact } from '../../routes/routes.json';
 
 import '../../assets/style/Main/MainSelector.scss';
@@ -34,8 +34,6 @@ const steps3 = [
 ];
 
 const ButtonsContainer = (props) => {
-  const history = useHistory();
-
   const { steps, setSteps } = props;
   const [userValues, setUserValues] = useState([]);
   const [title, setTitle] = useState('');
@@ -56,6 +54,10 @@ const ButtonsContainer = (props) => {
           setTitle('¿Qué servicio necesitas?');
           setButtons(steps3);
           break;
+        case 3:
+          setTitle('Ve a la pagina de contacto para poder contactar contigo');
+          setButtons(null);
+          break;
         default:
           setTitle('¿A que tipo de sector va dirigido el proyecto?');
           setButtons(steps1);
@@ -67,16 +69,14 @@ const ButtonsContainer = (props) => {
   }, [steps]);
 
   const stepHandler = (type) => {
-    setUserValues([...userValues, type]);
+    if (type !== null) {
+      setUserValues([...userValues, type]);
+    }
 
-    if (steps < 2) {
+    if (steps < 3) {
       setSteps(steps + 1);
     } else {
       setSteps(0);
-      history.push({
-        pathname: contact,
-        state: userValues,
-      });
       setUserValues([]);
     }
   };
@@ -85,15 +85,27 @@ const ButtonsContainer = (props) => {
     <div className="button-container">
       <h5>{title}</h5>
       <div className="cards-container">
-        {buttons.map((item, index) => (
-          <div
-            key={index}
-            onClick={() => stepHandler(item.type)}
-            className="buttons"
-          >
-            <SelectorButton item={item} />
+        {buttons ? (
+          buttons.map((item, index) => (
+            <div
+              key={index}
+              onClick={() => stepHandler(item.type)}
+              className="buttons"
+            >
+              <SelectorButton item={item} />
+            </div>
+          ))
+        ) : (
+          <div className="buttons">
+            <Link
+              to={{ pathname: contact, state: userValues }}
+              className="button-primary"
+              onClick={() => stepHandler(null)}
+            >
+              Ir a Contacto
+            </Link>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );
