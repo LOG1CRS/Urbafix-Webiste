@@ -30,7 +30,8 @@
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
     "react-visibility-sensor": "^5.1.1",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "typewriter-effect": "^2.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
