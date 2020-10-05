@@ -7,3 +7,6 @@
 # firebase files
 /.firebase 
 firebase-debug.log
+
+# Private Varibles 
+/src/keys.json

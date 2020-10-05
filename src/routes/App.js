@@ -1,10 +1,13 @@
+/* eslint-disable camelcase */
 import React, { useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import emailJS from 'emailjs-com';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import '../assets/style/App.scss';
 import { home, aboutUs, contact, products, services } from './routes.json';
+import { emailjs_user_id } from '../keys.json';
 
 import Layout from '../components/Layout/Layout';
 import Main from '../views/Main';
@@ -18,6 +21,7 @@ import RouterScrollToTop from '../components/Util/RouterScrollToTop';
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    emailJS.init(emailjs_user_id);
   }, []);
   return (
     <BrowserRouter>
