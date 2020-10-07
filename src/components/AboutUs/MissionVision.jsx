@@ -12,10 +12,10 @@ const MissionVision = () => {
           </div>
           <div className="mission-description">
             <p>
-              Estamos comprometidos en satisfacer a nuestros cliente, dando
-              soluciones integrales enfocadas a la prevención de accidentes y
-              protección vial, siempre ofreciendo productos y servicios de alta
-              calidad y profesionalismo.
+              Comprometidos con tener un trato personalizado a nuestros clientes
+              dando soluciones integrales enfocadas a la prevención de
+              accidentes y protección vial, ofreciendo productos y servicios de
+              alta calidad y profesionalismo.
             </p>
           </div>
         </div>

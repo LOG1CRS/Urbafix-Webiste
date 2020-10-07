@@ -6,7 +6,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import '../assets/style/App.scss';
-import { home, aboutUs, contact, products, services } from './routes.json';
+import {
+  home,
+  aboutUs,
+  contact,
+  products,
+  services,
+  blog,
+} from './routes.json';
 import { emailjs_user_id } from '../keys.json';
 
 import Layout from '../components/Layout/Layout';
@@ -15,6 +22,7 @@ import AboutUs from '../views/AboutUs';
 import Contact from '../views/Contact';
 import Services from '../views/Services';
 import Products from '../views/Products';
+import OnBuild from '../views/OnBuild';
 import NotFound from '../views/NotFound';
 import RouterScrollToTop from '../components/Util/RouterScrollToTop';
 
@@ -33,6 +41,7 @@ const App = () => {
           <Route exact path={contact} component={Contact} />
           <Route exact path={services} component={Services} />
           <Route exact path={products} component={Products} />
+          <Route exact path={blog} component={OnBuild} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

@@ -18,12 +18,7 @@
     "Grado ingeniería prismático "
   ],
   "botones": ["Botón hibrido 360", "Botón óptico"],
-  "delineadores": [
-    "Delineador tipo A",
-    "Delineador tipo B",
-    "Delineador tipo C",
-    "Delineadores 55"
-  ],
+  "delineadores": ["Delineadores", "Trafitambos", "Velas", "Delimitadores"],
   "boyas": [
     "Boya premium",
     "Boya solar",

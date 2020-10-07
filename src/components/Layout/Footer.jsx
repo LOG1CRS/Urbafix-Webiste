@@ -11,14 +11,14 @@ import {
   contact,
   facebook,
   instagram,
-  youtube,
+  // youtube,
   whatsapp,
 } from '../../routes/routes.json';
 
 import faceLogo from '../../assets/static/face-logo.png';
 import instaLogo from '../../assets/static/instagram-logo.png';
 import whatsLogo from '../../assets/static/whatsapp-logo.png';
-import youtubeLogo from '../../assets/static/youtube-logo.png';
+// import youtubeLogo from '../../assets/static/youtube-logo.png';
 
 const Footer = () => {
   return (
@@ -50,9 +50,9 @@ const Footer = () => {
           <a href={instagram} target="_blank" rel="noreferrer">
             <img className="social-icon" src={instaLogo} alt="Instagram" />
           </a>
-          <a href={youtube} target="_blank" rel="noreferrer">
+          {/* <a href={youtube} target="_blank" rel="noreferrer">
             <img className="social-icon" src={youtubeLogo} alt="Youtube" />
-          </a>
+          </a> */}
           <a href={whatsapp} target="_blank" rel="noreferrer">
             <img className="social-icon" src={whatsLogo} alt="Whatsapp" />
           </a>

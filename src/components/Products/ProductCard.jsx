@@ -14,6 +14,7 @@ import marcadorImg from '../../assets/static/marcador-service.png';
 const ProductCard = ({ color, title, content }) => {
   const [img, setImg] = useState();
   const [cardHeight, setCardHeight] = useState('');
+  const [marginTop, setMarginTop] = useState(null);
 
   useEffect(() => {
     switch (title) {
@@ -34,8 +35,9 @@ const ProductCard = ({ color, title, content }) => {
       case 'Boyas':
         setImg(boyasImg);
         break;
-      case 'Delineadores':
+      case 'Dispositivos de Protección de Obra':
         setImg(delineadoresImg);
+        setMarginTop('100px');
         break;
       case 'Marcador Reflectivo':
         setImg(marcadorImg);
@@ -55,10 +57,16 @@ const ProductCard = ({ color, title, content }) => {
           style={{ backgroundImage: `url(${img})` }}
         />
       </div>
-      <div className="product-card-title">
+      <div
+        className="product-card-title"
+        style={{ paddingTop: `${marginTop}` }}
+      >
         <h4>{title}</h4>
       </div>
-      <div className="product-card-types">
+      <div
+        className="product-card-types"
+        style={{ paddingTop: `calc(${marginTop} - 30px)` }}
+      >
         {content.map((item, index) => (
           <p key={index}>{item}</p>
         ))}

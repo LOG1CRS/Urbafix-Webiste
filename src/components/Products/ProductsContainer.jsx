@@ -38,7 +38,7 @@ const ProductsContainer = () => {
       <div className="card-5 card">
         <ProductCard
           color="#E9E9E9"
-          title="Delineadores"
+          title="Dispositivos de Protección de Obra"
           content={delineadores}
         />
       </div>

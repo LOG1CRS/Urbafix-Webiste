@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import swal from 'sweetalert';
 import emailJS from 'emailjs-com';
+import { location, email, whatsapp } from '../routes/routes.json';
 
 import '../assets/style/Contact/Contact.scss';
 import { emailjs_service_id, emailjs_template_id } from '../keys.json';
@@ -110,34 +111,50 @@ const Contact = () => {
           <h1>Contacto.</h1>
         </div>
         <div className="contact-icons">
-          <div className="icon-container">
-            <div className="icon">
-              <i className="fas fa-map-marker-alt" />
+          <a
+            href={location}
+            target="_blank"
+            rel="noreferrer"
+            className="contact-link"
+          >
+            <div className="icon-container">
+              <div className="icon">
+                <i className="fas fa-map-marker-alt" />
+              </div>
+              <div className="description">
+                <p>
+                  Eulogio Parra #2684.
+                  <br />
+                  Guadalajara, Jalisco
+                </p>
+              </div>
             </div>
-            <div className="description">
-              <p>
-                Eulogio Parra #2684.
-                <br />
-                Guadalajara, Jalisco
-              </p>
+          </a>
+          <a href={email} className="contact-link">
+            <div className="icon-container">
+              <div className="icon">
+                <i className="far fa-envelope" />
+              </div>
+              <div className="description">
+                <p>ventas@urbafix.com</p>
+              </div>
             </div>
-          </div>
-          <div className="icon-container">
-            <div className="icon">
-              <i className="far fa-envelope" />
+          </a>
+          <a
+            href={whatsapp}
+            target="_blank"
+            rel="noreferrer"
+            className="contact-link"
+          >
+            <div className="icon-container">
+              <div className="icon">
+                <i className="fas fa-phone-alt" />
+              </div>
+              <div className="description">
+                <p>3319638201</p>
+              </div>
             </div>
-            <div className="description">
-              <p>ventas@urbafix.com</p>
-            </div>
-          </div>
-          <div className="icon-container">
-            <div className="icon">
-              <i className="fas fa-phone-alt" />
-            </div>
-            <div className="description">
-              <p>3319638201</p>
-            </div>
-          </div>
+          </a>
         </div>
         <div className="contact-inputs">
           <div className="inputs">

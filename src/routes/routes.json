@@ -5,9 +5,12 @@
   "services": "/services",
   "products": "/products",
   "projects": "/#projects",
+  "blog": "/blog",
   "notFound": "/not-found",
   "facebook": "https://www.facebook.com/urbafix",
   "instagram": "https://instagram.com/urbafix?igshid=3z298r7zu9yc",
   "youtube": "/",
-  "whatsapp": "https://bit.ly/3dgAqld"
+  "whatsapp": "https://bit.ly/3dgAqld",
+  "location": "https://goo.gl/maps/DF3i3jEBLiqNX8pX8",
+  "email": "mailto:ventas@urbafix.com"
 }

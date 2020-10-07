@@ -1,7 +1,7 @@
 /* eslint-disable comma-dangle */
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 
 import '../../assets/style/AboutUs/Solutions.scss';
 
@@ -9,8 +9,8 @@ const Solutions = () => {
   return (
     <div className="solutions">
       <div className="solutions-container">
-        <h4>
-          <Typewriter
+        <h4 data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="300">
+          {/* <Typewriter
             onInit={(typewriter) => {
               typewriter
                 .typeString(
@@ -18,9 +18,9 @@ const Solutions = () => {
                 )
                 .start();
             }}
-          />
-          {/* SOLUCIONES <strong>MODERNAS</strong> CON ALTOS ESTÁNDARES DE
-          <strong> CALIDAD</strong>. */}
+          /> */}
+          SOLUCIONES <strong>MODERNAS</strong> CON ALTOS ESTÁNDARES DE
+          <strong> CALIDAD</strong>.
         </h4>
         <p data-aos="fade-zoom-in" data-aos-offset="0" data-aos-delay="300">
           Buscamos y creamos proyectos de carácter contemporáneo, de acuerdo a

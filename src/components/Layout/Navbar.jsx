@@ -11,7 +11,7 @@ import {
   products,
   services,
   projects,
-  notFound,
+  blog,
 } from '../../routes/routes.json';
 import '../../assets/style/Layout/Navbar.scss';
 
@@ -143,11 +143,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link
-              className="navbar-item"
-              onClick={() => closeMenu()}
-              to={notFound}
-            >
+            <Link className="navbar-item" onClick={() => closeMenu()} to={blog}>
               Blog
             </Link>
           </li>
