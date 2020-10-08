@@ -1,0 +1,90 @@
+@import '../Vars.scss';
+
+.float-button {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #00a105;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.float-button:hover {
+  background-color: #008304;
+}
+
+.icon {
+  font-size: 34px;
+}
+
+@media only screen and (min-width: 600px) {
+  .float-button {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px) {
+  .float-button {
+    width: 75px;
+    height: 75px;
+    bottom: 45px;
+    right: 45px;
+  }
+
+  .icon {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .float-button {
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .float-button {
+    width: 55px;
+    height: 55px;
+    bottom: 35px;
+    right: 35px;
+  }
+
+  .icon {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .float-button {
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+}
