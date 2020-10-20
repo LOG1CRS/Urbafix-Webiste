@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import mobiliarioImg from '../../assets/static/services.jpg';
 import horizontalImg from '../../assets/static/hero-wallpaper-3.jpg';
-import verticalImg from '../../assets/static/vertical-service.jpg';
+import verticalImg from '../../assets/static/project-2.jpg';
 import proyectosImg from '../../assets/static/proyectos-service.jpg';
 
 import '../../assets/style/Services/Hero.scss';

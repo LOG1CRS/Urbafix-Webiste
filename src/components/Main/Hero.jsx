@@ -3,10 +3,10 @@ import { Carousel } from 'react-responsive-carousel';
 
 import '../../assets/style/Main/Hero.scss';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import wallpaper1 from '../../assets/static/hero-wallpaper-4.jpg';
+import wallpaper1 from '../../assets/static/hero-wallpaper-1.jpg';
 import wallpaper2 from '../../assets/static/hero-wallpaper-2.jpg';
 import wallpaper3 from '../../assets/static/hero-wallpaper-3.jpg';
-import wallpaper4 from '../../assets/static/hero-wallpaper-1.jpg';
+import wallpaper4 from '../../assets/static/hero-wallpaper-4.jpg';
 import { projects, aboutUs, products, contact } from '../../routes/routes.json';
 
 const Hero = () => {
@@ -22,7 +22,7 @@ const Hero = () => {
       className="hero-main"
     >
       <div
-        style={{ backgroundImage: `url(${wallpaper3})` }}
+        style={{ backgroundImage: `url(${wallpaper1})` }}
         className="slide-main"
       >
         <div className="hero-main-content">
@@ -55,7 +55,7 @@ const Hero = () => {
       </div>
       <div
         style={{
-          backgroundImage: `url(${wallpaper1})`,
+          backgroundImage: `url(${wallpaper3})`,
         }}
         className="slide slide-top"
       >

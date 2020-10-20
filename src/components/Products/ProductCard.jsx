@@ -5,7 +5,7 @@ import '../../assets/style/Products/ProductCard.scss';
 
 import verticalImg from '../../assets/static/vertical-service.png';
 import dispositivosImg from '../../assets/static/dispositivos-service.png';
-import vinilesImg from '../../assets/static/viniles-service.png';
+import vinilesImg from '../../assets/static/viniles-service.jpg';
 import botonesImg from '../../assets/static/botones-service.jpg';
 import boyasImg from '../../assets/static/boyas-service.png';
 import delineadoresImg from '../../assets/static/delineadores-service.png';
