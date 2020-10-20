@@ -47,7 +47,7 @@ const BlackService = ({ type }) => {
         setTitle('PRODUCTOS');
         setMainImg(productosImg);
         setDescription(
-          'Topes para estacionamiento, reductores  de velocidad, protectores columna y pared. Productos fabricados 100 % a partir de hule reciclado.'
+          'Topes para estacionamiento, reductores  de velocidad, protectores columna y pared. Productos fabricados 100% a partir de hule reciclado.'
         );
         setAddress({
           pathname: products,

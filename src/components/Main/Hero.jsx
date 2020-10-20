@@ -3,10 +3,10 @@ import { Carousel } from 'react-responsive-carousel';
 
 import '../../assets/style/Main/Hero.scss';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import wallpaper1 from '../../assets/static/Contact-wallpaper.jpg';
+import wallpaper1 from '../../assets/static/hero-wallpaper-4.jpg';
 import wallpaper2 from '../../assets/static/hero-wallpaper-2.jpg';
 import wallpaper3 from '../../assets/static/hero-wallpaper-3.jpg';
-import wallpaper4 from '../../assets/static/hero-wallpaper-4.jpg';
+import wallpaper4 from '../../assets/static/hero-wallpaper-1.jpg';
 import { projects, aboutUs, products, contact } from '../../routes/routes.json';
 
 const Hero = () => {
@@ -53,7 +53,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div style={{ backgroundImage: `url(${wallpaper1})` }} className="slide">
+      <div
+        style={{
+          backgroundImage: `url(${wallpaper1})`,
+        }}
+        className="slide slide-top"
+      >
         <div className="hero-main-content">
           <div className="hero-main-container">
             <h1 className="hero-main-title">Señalamiento y Seguridad Vial</h1>
@@ -65,7 +70,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div style={{ backgroundImage: `url(${wallpaper4})` }} className="slide">
+      <div
+        style={{
+          backgroundImage: `url(${wallpaper4})`,
+        }}
+        className="slide slide-top"
+      >
         <div className="hero-main-content">
           <div className="hero-main-container">
             <h1 className="hero-main-title">Proyectos Personalizados</h1>
