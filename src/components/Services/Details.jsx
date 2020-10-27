@@ -14,10 +14,11 @@ import furniture2 from '../../assets/static/mobiliario-service-2.jpg';
 const horizontalFirstContent = () => {
   return (
     <p>
-      Ofrecemos un gran número de dispositivos que pueden ser instalados a lo
-      largo de las vías o carreteras para guiar a la circulación y mejorar la
-      seguridad. Siempre realizando proyectos que cumplan con las normas
-      mundiales de calidad.
+      Ofrecemos un gran número de
+      <strong> dispositivos </strong>
+      que pueden ser instalados a lo largo de las
+      <strong> vías </strong>o<strong> carreteras </strong>
+      para guiar a la circulación y mejorar la seguridad.
     </p>
   );
 };
@@ -28,11 +29,7 @@ const horizontalSecondContent = () => {
       El
       <strong> señalamiento horizontal </strong>
       se compone de todas las marcas pintadas o colocadas sobre el pavimento,
-      guarniciones y estructuras, con el objetivo de delinear las carreteras y
-      vialidades urbanas, además de denotar todos aquellos elementos
-      estructurales que estén instalados dentro del derecho de vía, para regular
-      y canalizar el tránsito de vehículos y peatones, así como proporcionar
-      información de los usuarios. Estas marcas son
+      guarniciones y estructuras.Estas marcas son
       <strong> rayas, símbolos, leyendas o dispositivos </strong>.
     </p>
   );
@@ -41,18 +38,11 @@ const horizontalSecondContent = () => {
 const verticalFirstContent = () => {
   return (
     <p>
-      Según su propósito ofrecemos soluciones de gran calidad y precisión, si se
-      tiene por objeto prevenir al usuario sobre la existencia de algún peligro
-      potencial en el camino y su naturaleza se utilizan
-      <strong> señales preventivas</strong>.
-      <br />
-      Si se busca regular el tránsito indicando al usuario la existencia de
-      limitaciones físicas o prohibiciones reglamentarias que restringen el uso
-      de la vialidad, las
-      <strong>señales restrictivas </strong>
-      son la opción correcta. Para informar sobre la existencia de servicios o
-      de algún lugar de interés turístico o recreativo se utilizarán las
-      <strong>señales turísticas y de servicios</strong>.
+      Según su propósito ofrecemos soluciones de gran calidad y precisión. El
+      señalamiento vertical busca <strong>prevenir</strong> sobre la existencia
+      de algún peligro potencial, <strong>regula</strong> el tránsito, e
+      <strong> informa </strong>
+      sobre servicios o lugares turísticos y recreativos.
     </p>
   );
 };
@@ -60,18 +50,9 @@ const verticalFirstContent = () => {
 const verticalSecondContent = () => {
   return (
     <p>
-      Las
-      <strong> señales informativas </strong>
-      se utilizarán cuando se tenga por objeto guiar al usuario a lo largo de su
-      itinerario por carreteras y vialidades urbanas, e informarle sobre nombres
-      y ubicación de poblaciones y de vialidades, lugares de interés, distancias
-      en kilómetros, entre otras recomendaciones que convenga observar.
-      <br />
-      Si se busca encauzar y prevenir a los usuarios de las carreteras y
-      vialidades urbanas de la existencia de objetos dentro del derecho de vía,
-      de bifurcaciones en la carretera o vialidad urbana, además de delinear sus
-      características geométricas, entre otras funciones se utilizarán
-      <strong> dispositivos diversos</strong>.
+      También, <strong>guían</strong> al usuario a lo largo de su itinerario por
+      carreteras y vialidades urbanas, y <strong>delinean</strong> sus
+      características geométricas.
     </p>
   );
 };
@@ -79,8 +60,20 @@ const verticalSecondContent = () => {
 const projectsFirstContent = () => {
   return (
     <p>
-      Desarrollo de proyectos de acuerdo con las necesidades y especificaciones
-      particulares del cliente.
+      Desarrollamos proyectos de acuerdo a las <strong>necesidades</strong> y
+      <strong> especificaciones</strong> particulares del cliente, siempre
+      realizando trabajos que cumplan con las normas mundiales de
+      <strong>calidad</strong>.
+    </p>
+  );
+};
+
+const projectsSecondContent = () => {
+  return (
+    <p>
+      Contamos con un trato personalizado, apoyamos a nuestros clientes y
+      proponemos <strong>soluciones innovadoras</strong> a sus problemáticas
+      para conseguir los resultados esperados.
     </p>
   );
 };
@@ -88,8 +81,9 @@ const projectsFirstContent = () => {
 const furnitureFirstContent = () => {
   return (
     <p>
-      Equipamos y diseñamos espacios públicos, escuelas, y centros comerciales
-      con el mejor mobiliario.
+      Dentro de nuestros proyectos de urbanismo,
+      <strong> equipamos y diseñamos</strong> espacios públicos, escuelas,
+      centros comerciales, entre otros, con el mejor mobiliario y señalética.
     </p>
   );
 };
@@ -97,10 +91,10 @@ const furnitureFirstContent = () => {
 const furnitureSecondContent = () => {
   return (
     <p>
-      El mobiliario urbano está compuesto por todos los elementos fijos que se
-      localizan en los espacios públicos. Urbafix se preocupa por la alta
-      durabilidad y permanencia de estos espacios por lo que utiliza materiales
-      resistentes con especificaciones de calidad que garanticen su estabilidad.
+      Urbafix se preocupa por la alta <strong>durabilidad y permanencia </strong>
+      de estos espacios por lo que utiliza materiales resistentes con
+      especificaciones de <strong>calidad</strong> que garanticen su
+      estabilidad.
     </p>
   );
 };
@@ -131,7 +125,7 @@ const Details = (props) => {
         setFirstImage(project1);
         setSecondImage(project2);
         setFirstContent(projectsFirstContent);
-        setSecondContent(null);
+        setSecondContent(projectsSecondContent);
         break;
       case 4:
         setFirstImage(furniture1);
