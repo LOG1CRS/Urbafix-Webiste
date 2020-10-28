@@ -26,7 +26,7 @@
   font-family: $sarabun-font;
   font-weight: $text-wght;
   text-align: justify;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .detail-text-container p strong {
@@ -92,7 +92,7 @@
 
 @media only screen and (min-width: 1020px) and (max-width: 1030px) {
   .detail-text-container p {
-    font-size: 23px;
+    font-size: 22px;
   }
 }
 
@@ -131,13 +131,13 @@
   }
 
   .detail-text-container p {
-    font-size: 23px;
+    font-size: 22px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .detail-text-container p {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
@@ -147,6 +147,6 @@
   }
 
   .detail-text-container p {
-    font-size: 31px;
+    font-size: 30px;
   }
 }
