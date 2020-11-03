@@ -2,11 +2,11 @@
 
 .clients {
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   padding: 15px 20px 30px 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   align-items: center;
   justify-items: center;
 }
@@ -31,7 +31,7 @@
   .clients {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
 
   .clients-img {

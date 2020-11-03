@@ -28,6 +28,10 @@
   justify-content: space-around;
 }
 
+.urbanismo-service .services-hero-container {
+  height: 150px;
+}
+
 .services-hero-container h2 {
   text-align: center;
   font-family: $sarabun-font;
@@ -54,6 +58,10 @@
     height: 250px;
   }
 
+  .urbanismo-service .services-hero-container {
+    height: 200px;
+  }
+
   .services-hero-container h2 {
     font-size: 40px;
   }
@@ -73,6 +81,10 @@
   .services-hero-container {
     width: 480px;
     height: 270px;
+  }
+
+  .urbanismo-service .services-hero-container {
+    height: 220px;
   }
 
   .services-hero-container h2 {
@@ -97,6 +109,10 @@
     justify-content: space-between;
   }
 
+  .urbanismo-service .services-hero-container {
+    height: 130px;
+  }
+
   .services-hero-container h2 {
     font-size: 32px;
   }
@@ -119,6 +135,10 @@
     justify-content: space-between;
   }
 
+  .urbanismo-service .services-hero-container {
+    height: 140px;
+  }
+
   .services-hero-container h2 {
     font-size: 35px;
   }
@@ -139,6 +159,10 @@
     width: 480px;
     height: 250px;
     justify-content: space-between;
+  }
+
+  .urbanismo-service .services-hero-container {
+    height: 190px;
   }
 
   .services-hero-container h2 {

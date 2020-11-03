@@ -17,15 +17,16 @@
     "Topes de Alta intensidad fluorescente",
     "Grado ingeniería prismático "
   ],
-  "botones": ["Botón hibrido 360", "Botón óptico"],
-  "delineadores": ["Delineadores", "Trafitambos", "Velas", "Delimitadores"],
+  "botones": ["Botón hibrido 360", "Botón óptico", "Botón metálico"],
+  "delineadores": ["Delineadores", "Trafitambos", "Delimitadores", "Poste alineador", "Hito flex", "Poste cónico", "Panel vertical", "Conos", "Barreras", "Lámparas"],
   "boyas": [
     "Boya premium",
     "Boya solar",
     "Boya solida",
     "Boya delineadora",
     "Mini boya",
-    "Micro boya"
+    "Micro boya",
+    "Boya metálica"
   ],
-  "marcadorReflectivo": ["Unidireccional", "Bidireccional"]
+  "marcadorReflectivo": ["Unidireccional", "Bidireccional", "Vialetas metálicas"]
 }

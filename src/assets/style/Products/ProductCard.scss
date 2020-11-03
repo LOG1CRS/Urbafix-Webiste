@@ -57,6 +57,18 @@
   grid-template-rows: 158px 63px 200px;
 }
 
+.dispositivos-card {
+  height: 850px;
+}
+
+.dispositivos-card .product-card-types {
+  padding-top: 40px !important;
+}
+
+.dispositivos-card .product-card {
+  grid-template-rows: 180px 100px 570px;
+}
+
 @media only screen and (min-width: 600px) {
   .card {
     width: 50%;
@@ -121,5 +133,17 @@
   .product-card-types p {
     font-size: 25px;
     margin-bottom: 30px;
+  }
+
+  .dispositivos-card {
+    height: 1000px;
+  }
+
+  .dispositivos-card .product-card-types {
+    padding-top: 40px !important;
+  }
+
+  .dispositivos-card .product-card {
+    grid-template-rows: 200px 120px 680px;
   }
 }

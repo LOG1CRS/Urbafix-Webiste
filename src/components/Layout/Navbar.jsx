@@ -119,7 +119,7 @@ const Navbar = () => {
                     },
                   }}
                 >
-                  Mobiliario Urbano
+                  Urbanismo
                 </Link>
               </li>
             </ul>
