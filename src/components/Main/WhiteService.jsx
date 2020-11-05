@@ -30,7 +30,7 @@ const WhiteService = ({ type }) => {
         });
         break;
       case 'mobiliario':
-        setTitle('MOBILIARIO URBANO');
+        setTitle('URBANISMO');
         setMainImg(mobiliarioImg);
         setDescription(
           'Equipamos y diseñamos espacios públicos, escuelas y centros comerciales con el mejor mobiliario.'
