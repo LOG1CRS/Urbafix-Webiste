@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../../assets/style/Main/WhoIsUrbafix.scss';
 import { aboutUs } from '../../routes/routes.json';
 
-import whoImg from '../../assets/static/who-image.png';
+import whoImg from '../../assets/static/who-image.jpg';
 
 const WhoIsUrbafix = () => {
   return (
