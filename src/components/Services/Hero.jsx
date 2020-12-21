@@ -4,6 +4,7 @@ import mobiliarioImg from '../../assets/static/services.jpg';
 import horizontalImg from '../../assets/static/hero-wallpaper-3.jpg';
 import verticalImg from '../../assets/static/project-2.jpg';
 import proyectosImg from '../../assets/static/proyectos-service.jpg';
+import retroImg from '../../assets/static/retroImg.jpg';
 
 import '../../assets/style/Services/Hero.scss';
 
@@ -33,6 +34,11 @@ const Hero = ({ service }) => {
         setTitle('URBANISMO');
         setWallpaper(mobiliarioImg);
         setUrbanismoStyle('urbanismo-service');
+        break;
+      case 5:
+        setTitle('RETRORREFLECTÓMETRO');
+        setWallpaper(retroImg);
+        setUrbanismoStyle('retro-service');
         break;
       default:
         setTitle('SEÑALAMIENTO HORIZONTAL');

@@ -22,12 +22,7 @@ const Layout = ({ children }) => {
         </a>
       </div>
       <div id="tooltip">
-        <a
-          href={phone}
-          target="_blank"
-          rel="noreferrer"
-          className="float-button phone-number"
-        >
+        <a href={phone} rel="noreferrer" className="float-button phone-number">
           <i className="fas fa-phone-alt icon" />
         </a>
       </div>

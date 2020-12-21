@@ -10,6 +10,8 @@ import project1 from '../../assets/static/proyectos-service-1.jpg';
 import project2 from '../../assets/static/proyectos-service-2.jpg';
 import furniture1 from '../../assets/static/mobiliario-service-1.jpg';
 import furniture2 from '../../assets/static/mobiliario-service-2.jpg';
+import retro1 from '../../assets/static/retro-service-1.jpg';
+import retro2 from '../../assets/static/retro-service-2.jpg';
 
 const horizontalFirstContent = () => {
   return (
@@ -91,10 +93,31 @@ const furnitureFirstContent = () => {
 const furnitureSecondContent = () => {
   return (
     <p>
-      Urbafix se preocupa por la alta <strong>durabilidad y permanencia </strong>
+      Urbafix se preocupa por la alta{' '}
+      <strong>durabilidad y permanencia </strong>
       de estos espacios por lo que utiliza materiales resistentes con
       especificaciones de <strong>calidad</strong> que garanticen su
       estabilidad.
+    </p>
+  );
+};
+
+const retroFirstContent = () => {
+  return (
+    <p>
+      Servicio de retrorrefectómetro RetroSign GRX. Medición profesional de todo
+      tipo de viniles retrorreflejantes, en señales de tráfico en carretera,
+      placas de matrícul y cintas reflejantes.
+    </p>
+  );
+};
+
+const retroSecondContent = () => {
+  return (
+    <p>
+      RetroSign GRX cumple con las normas existentes para la medición de
+      retrorreflexión de diversos colores y todo tipo de materiales
+      retrorreflectantes incluidos varios tipos de fluorescencia.
     </p>
   );
 };
@@ -132,6 +155,12 @@ const Details = (props) => {
         setSecondImage(furniture2);
         setFirstContent(furnitureFirstContent);
         setSecondContent(furnitureSecondContent);
+        break;
+      case 5:
+        setFirstImage(retro1);
+        setSecondImage(retro2);
+        setFirstContent(retroFirstContent);
+        setSecondContent(retroSecondContent);
         break;
       default:
         setFirstImage(horizontal1);

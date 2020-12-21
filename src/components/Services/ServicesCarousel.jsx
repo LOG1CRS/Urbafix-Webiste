@@ -19,10 +19,13 @@ const ServicesCarousel = (props) => {
         setImages(verticalImages);
         break;
       case 3:
-        setImages(horizontalImages);
+        setImages(null);
         break;
       case 4:
-        setImages(verticalImages);
+        setImages(null);
+        break;
+      case 5:
+        setImages(null);
         break;
       default:
         setImages(horizontalImages);
@@ -31,29 +34,33 @@ const ServicesCarousel = (props) => {
   });
 
   return (
-    <div className="services-carousel-container">
-      <Carousel
-        showIndicators={false}
-        dynamicHeight
-        autoPlay
-        centerMode
-        showThumbs={false}
-        showStatus={false}
-        interval={2500}
-        transitionTime={500}
-        infiniteLoop
-        className="services-carousel"
-      >
-        {images.map((item, key) => (
-          <div
-            key={key}
-            style={{ backgroundImage: `url(${item})` }}
-            // className="slide-service"
-            className="services-carousel-img"
-          />
-        ))}
-      </Carousel>
-    </div>
+    <>
+      {images !== null ? (
+        <div className="services-carousel-container">
+          <Carousel
+            showIndicators={false}
+            dynamicHeight
+            autoPlay
+            centerMode
+            showThumbs={false}
+            showStatus={false}
+            interval={2500}
+            transitionTime={500}
+            infiniteLoop
+            className="services-carousel"
+          >
+            {images.map((item, key) => (
+              <div
+                key={key}
+                style={{ backgroundImage: `url(${item})` }}
+                // className="slide-service"
+                className="services-carousel-img"
+              />
+            ))}
+          </Carousel>
+        </div>
+      ) : null}
+    </>
   );
 };
 

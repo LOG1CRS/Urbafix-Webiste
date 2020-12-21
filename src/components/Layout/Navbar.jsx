@@ -12,6 +12,7 @@ import {
   services,
   projects,
   blog,
+  store,
 } from '../../routes/routes.json';
 import '../../assets/style/Layout/Navbar.scss';
 
@@ -122,6 +123,19 @@ const Navbar = () => {
                   Urbanismo
                 </Link>
               </li>
+              <li>
+                <Link
+                  onClick={() => closeMenu()}
+                  to={{
+                    pathname: services,
+                    state: {
+                      type: 5,
+                    },
+                  }}
+                >
+                  Retrorreflectómetro
+                </Link>
+              </li>
             </ul>
           </li>
           <li>
@@ -146,6 +160,17 @@ const Navbar = () => {
             <Link className="navbar-item" onClick={() => closeMenu()} to={blog}>
               Blog
             </Link>
+          </li>
+          <li>
+            <a
+              className="navbar-item"
+              onClick={() => closeMenu()}
+              target="_blank"
+              rel="noreferrer"
+              href={store}
+            >
+              Comprar
+            </a>
           </li>
           <li>
             <Link
