@@ -61,9 +61,9 @@ const Navbar = () => {
             <Link
               className="navbar-item"
               onClick={() => closeMenu()}
-              to={products}
+              to={aboutUs}
             >
-              Productos
+              Nosotros
             </Link>
           </li>
           <li className="dropdown">
@@ -151,14 +151,9 @@ const Navbar = () => {
             <Link
               className="navbar-item"
               onClick={() => closeMenu()}
-              to={aboutUs}
+              to={products}
             >
-              Nosotros
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-item" onClick={() => closeMenu()} to={blog}>
-              Blog
+              Productos
             </Link>
           </li>
           <li>
@@ -169,8 +164,13 @@ const Navbar = () => {
               rel="noreferrer"
               href={store}
             >
-              Comprar
+              Tienda
             </a>
+          </li>
+          <li>
+            <Link className="navbar-item" onClick={() => closeMenu()} to={blog}>
+              Blog
+            </Link>
           </li>
           <li>
             <Link

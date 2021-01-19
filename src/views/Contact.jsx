@@ -136,7 +136,7 @@ const Contact = () => {
                 <i className="far fa-envelope" />
               </div>
               <div className="description">
-                <p>ventas@urbafix.com</p>
+                <p>ventas@urbafix.com.mx</p>
               </div>
             </div>
           </a>
