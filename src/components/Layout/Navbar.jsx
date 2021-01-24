@@ -157,13 +157,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a
-              className="navbar-item"
-              onClick={() => closeMenu()}
-              target="_blank"
-              rel="noreferrer"
-              href={store}
-            >
+            <a className="navbar-item" onClick={() => closeMenu()} href={store}>
               Tienda
             </a>
           </li>
