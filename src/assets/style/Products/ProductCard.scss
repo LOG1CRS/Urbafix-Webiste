@@ -38,6 +38,17 @@
   margin-bottom: 25px;
 }
 
+.product-card-types a {
+  text-align: center;
+  font-family: $sarabun-font;
+  font-weight: $text-wght;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
 .product-card-img,
 .product-card-title {
   display: flex;
@@ -131,6 +142,11 @@
   }
 
   .product-card-types p {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .product-card-types a {
     font-size: 25px;
     margin-bottom: 30px;
   }

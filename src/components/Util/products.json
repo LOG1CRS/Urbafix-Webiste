@@ -18,7 +18,18 @@
     "Grado ingeniería prismático "
   ],
   "botones": ["Botón hibrido 360", "Botón óptico", "Botón metálico"],
-  "delineadores": ["Delineadores", "Trafitambos", "Delimitadores", "Poste alineador", "Hito flex", "Poste cónico", "Panel vertical", "Conos", "Barreras", "Lámparas"],
+  "delineadores": [
+    "Trafitambos",
+    "Conos",
+    "Barreras",
+    "Lámparas",
+    "Delineadores",
+    "Delimitadores",
+    "Poste alineador",
+    "Hito flex",
+    "Poste cónico",
+    "Panel vertical"
+  ],
   "boyas": [
     "Boya premium",
     "Boya solar",
@@ -28,5 +39,9 @@
     "Micro boya",
     "Boya metálica"
   ],
-  "marcadorReflectivo": ["Unidireccional", "Bidireccional", "Vialetas metálicas"]
+  "marcadorReflectivo": [
+    "Unidireccional",
+    "Bidireccional",
+    "Vialetas metálicas"
+  ]
 }

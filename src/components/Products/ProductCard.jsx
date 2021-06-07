@@ -67,9 +67,22 @@ const ProductCard = ({ color, title, content }) => {
         className="product-card-types"
         style={{ paddingTop: `calc(${marginTop} - 30px)` }}
       >
-        {content.map((item, index) => (
-          <p key={index}>{item}</p>
-        ))}
+        {content.map((item, index) => {
+          if (item.pdf) {
+            return (
+              <a
+                href={item.pdf}
+                key={index}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {item.title}
+              </a>
+            );
+          } else {
+            return <p key={index}>{item.title}</p>;
+          }
+        })}
       </div>
     </div>
   );

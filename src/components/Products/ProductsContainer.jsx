@@ -10,7 +10,7 @@ import {
   delineadores,
   boyas,
   marcadorReflectivo,
-} from '../Util/products.json';
+} from '../Util/products';
 
 const ProductsContainer = () => {
   return (
