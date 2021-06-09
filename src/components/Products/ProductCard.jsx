@@ -23,7 +23,7 @@ const ProductCard = ({ color, title, content }) => {
         break;
       case 'Dispositivos':
         setImg(dispositivosImg);
-        setCardHeight('small-mobile-card');
+        setCardHeight('medium-mobile-card');
         break;
       case 'Viniles Reflejantes':
         setImg(vinilesImg);
@@ -77,6 +77,7 @@ const ProductCard = ({ color, title, content }) => {
                 rel="noopener noreferrer"
               >
                 {item.title}
+                <i className="fas fa-plus file-icon"></i>
               </a>
             );
           } else {

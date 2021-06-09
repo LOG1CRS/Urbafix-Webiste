@@ -2,6 +2,14 @@ import { pdfs } from '../../assets';
 
 const señalamientoVertical = [
   {
+    title: 'SIOP',
+    pdf: pdfs.siop,
+  },
+  {
+    title: 'SCT',
+    pdf: pdfs.sct,
+  },
+  {
     title: 'Señalamiento preventivo',
     pdf: null,
   },
@@ -21,13 +29,21 @@ const señalamientoVertical = [
     title: 'Señalamiento informativo',
     pdf: null,
   },
-  {
-    title: 'Señalamiento de información general',
-    pdf: null,
-  },
+  // {
+  //   title: 'Señalamiento de información general',
+  //   pdf: null,
+  // },
 ];
 
 const dispositivos = [
+  {
+    title: 'Bolardos tipo 2',
+    pdf: pdfs.bolardo2,
+  },
+  {
+    title: 'Bolardos tipo 3',
+    pdf: pdfs.bolardo3,
+  },
   {
     title: 'Reductores de velocidad',
     pdf: pdfs.reductorDeVelocidad,
@@ -37,8 +53,12 @@ const dispositivos = [
     pdf: pdfs.topesDeEstacionamiento,
   },
   {
-    title: 'Esquineros',
+    title: 'Esquineros tipo 1',
     pdf: pdfs.esquinero,
+  },
+  {
+    title: 'Esquineros tipo 2',
+    pdf: pdfs.esquinero2,
   },
 ];
 
@@ -82,7 +102,15 @@ const delineadores = [
     pdf: pdfs.conos,
   },
   {
-    title: 'Barreras',
+    title: 'Conos con base negra',
+    pdf: pdfs.conosBaseNegra,
+  },
+  {
+    title: 'Barrera mini',
+    pdf: pdfs.barreraMini,
+  },
+  {
+    title: 'Barrera bicentenario',
     pdf: pdfs.barrera,
   },
   {
@@ -112,6 +140,10 @@ const delineadores = [
   {
     title: 'Panel vertical',
     pdf: null,
+  },
+  {
+    title: 'Flechero 18 módulos',
+    pdf: pdfs.flechero,
   },
 ];
 

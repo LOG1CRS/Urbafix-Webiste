@@ -22,7 +22,7 @@ const ProductsContainer = () => {
           content={señalamientoVertical}
         />
       </div>
-      <div className="card-2 card small-mobile-card">
+      <div className="card-2 card medium-mobile-card">
         <ProductCard color="#fff" title="Dispositivos" content={dispositivos} />
       </div>
       <div className="card-3 card">
