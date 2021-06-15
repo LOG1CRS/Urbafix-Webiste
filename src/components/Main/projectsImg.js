@@ -5,6 +5,12 @@ import project4 from '../../assets/static/project-4.jpg';
 import project5 from '../../assets/static/project-5.jpg';
 import project6 from '../../assets/static/project-6.jpg';
 import project7 from '../../assets/static/project-7.jpg';
+import project8 from '../../assets/static/project-8.jpg';
+import project9 from '../../assets/static/project-9.jpg';
+import project10 from '../../assets/static/project-10.jpg';
+import project11 from '../../assets/static/project-11.jpg';
+import project12 from '../../assets/static/project-12.jpg';
+import project13 from '../../assets/static/project-13.jpg';
 
 const projectsImg = [
   {
@@ -48,6 +54,42 @@ const projectsImg = [
     title: 'Tierra y Armonía',
     project: 'Vitia La Toscana',
     work: 'Señalamiento horizontal y vertical en sótanos',
+  },
+  {
+    img: project8,
+    title: 'Ford Jalisco Motors',
+    project: 'Señalamiento horizontal para taller',
+    work: 'Piso epóxico para taller de mantenimiento',
+  },
+  {
+    img: project9,
+    title: 'Vise',
+    project: '160 Poncitlán-San Pedro Itzicán',
+    work: 'Colocación de fantasmas y señalamiento vertical',
+  },
+  {
+    img: project10,
+    title: 'Mirjaq Contrucciones',
+    project: 'Conservación multianual nuevo periférico',
+    work: 'Pintura de retornos y carriles, barrera central, bacheo',
+  },
+  {
+    img: project11,
+    title: 'Grupo San Carlos',
+    project: 'Galia',
+    work: 'Junta fría en machuelos y grietas',
+  },
+  {
+    img: project12,
+    title: 'Recal Conique II',
+    project: 'Recal Conique II',
+    work: 'Paso peatonal',
+  },
+  {
+    img: project13,
+    title: 'Vitia la toscana',
+    project: 'Vitia la toscana',
+    work: 'Balizamiento de sótanos',
   },
 ];
 
