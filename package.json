@@ -23,6 +23,7 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "emailjs-com": "^2.6.3",
+    "firebase": "^8.6.7",
     "re-carousel": "^2.4.0",
     "react": "^16.13.1",
     "react-countup": "^4.3.3",
