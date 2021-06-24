@@ -1,8 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from 'react';
+import { Lightbox } from 'react-modal-image';
 
 import '../../assets/style/Products/ProductCard.scss';
-
 import verticalImg from '../../assets/static/vertical-service.png';
 import dispositivosImg from '../../assets/static/dispositivos-service.png';
 import vinilesImg from '../../assets/static/viniles-service.jpg';
@@ -15,6 +15,8 @@ const ProductCard = ({ color, title, content }) => {
   const [img, setImg] = useState();
   const [cardHeight, setCardHeight] = useState('');
   const [marginTop, setMarginTop] = useState(null);
+  const [imgModal, setImgModal] = useState(false);
+  const [productSelected, setProducSelected] = useState({});
 
   useEffect(() => {
     switch (title) {
@@ -46,46 +48,66 @@ const ProductCard = ({ color, title, content }) => {
     }
   }, []);
 
+  const handleProductSelection = (product) => {
+    setProducSelected(product);
+    setImgModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setProducSelected({});
+    setImgModal(false);
+  };
+
   return (
-    <div
-      className={`product-card ${cardHeight}`}
-      style={{ backgroundColor: `${color}` }}
-    >
-      <div className="product-card-img">
+    <>
+      <div
+        className={`product-card ${cardHeight}`}
+        style={{ backgroundColor: `${color}` }}
+      >
+        <div className="product-card-img">
+          <div
+            className="product-img-container"
+            style={{ backgroundImage: `url(${img})` }}
+          />
+        </div>
         <div
-          className="product-img-container"
-          style={{ backgroundImage: `url(${img})` }}
+          className="product-card-title"
+          style={{ paddingTop: `${marginTop}` }}
+        >
+          <h4>{title}</h4>
+        </div>
+        <div
+          className="product-card-types"
+          style={{ paddingTop: `calc(${marginTop} - 30px)` }}
+        >
+          {content.map((item, index) => {
+            if (item.doc) {
+              return (
+                <p
+                  className="doc-button"
+                  key={index}
+                  onClick={() =>
+                    handleProductSelection({ img: item.doc, title: item.title })
+                  }
+                >
+                  {item.title}
+                  <i className="fas fa-plus file-icon"></i>
+                </p>
+              );
+            } else {
+              return <p key={index}>{item.title}</p>;
+            }
+          })}
+        </div>
+      </div>
+      {imgModal && (
+        <Lightbox
+          medium={productSelected.img}
+          alt={productSelected.title}
+          onClose={() => handleCloseModal()}
         />
-      </div>
-      <div
-        className="product-card-title"
-        style={{ paddingTop: `${marginTop}` }}
-      >
-        <h4>{title}</h4>
-      </div>
-      <div
-        className="product-card-types"
-        style={{ paddingTop: `calc(${marginTop} - 30px)` }}
-      >
-        {content.map((item, index) => {
-          if (item.pdf) {
-            return (
-              <a
-                href={item.pdf}
-                key={index}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {item.title}
-                <i className="fas fa-plus file-icon"></i>
-              </a>
-            );
-          } else {
-            return <p key={index}>{item.title}</p>;
-          }
-        })}
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

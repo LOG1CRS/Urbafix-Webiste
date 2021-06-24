@@ -1,195 +1,195 @@
-import { pdfs } from '../../assets';
+import { docs } from '../../assets';
 
 const señalamientoVertical = [
   {
     title: 'SIOP',
-    pdf: pdfs.siop,
+    doc: docs.siop,
   },
   {
     title: 'SCT',
-    pdf: pdfs.sct,
+    doc: docs.sct,
   },
   {
     title: 'Señalamiento preventivo',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Señalamiento restrictivo',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Señalamiento turistico',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Señalamiento de servicios',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Señalamiento informativo',
-    pdf: null,
+    doc: null,
   },
   // {
   //   title: 'Señalamiento de información general',
-  //   pdf: null,
+  //   doc: null,
   // },
 ];
 
 const dispositivos = [
   {
     title: 'Bolardos tipo 2',
-    pdf: pdfs.bolardo2,
+    doc: docs.bolardo2,
   },
   {
     title: 'Bolardos tipo 3',
-    pdf: pdfs.bolardo3,
+    doc: docs.bolardo3,
   },
   {
     title: 'Reductores de velocidad',
-    pdf: pdfs.reductorDeVelocidad,
+    doc: docs.reductorDeVelocidad,
   },
   {
     title: 'Topes de estacionamiento',
-    pdf: pdfs.topesDeEstacionamiento,
+    doc: docs.topesDeEstacionamiento,
   },
   {
     title: 'Esquineros tipo 1',
-    pdf: pdfs.esquinero,
+    doc: docs.esquinero,
   },
   {
     title: 'Esquineros tipo 2',
-    pdf: pdfs.esquinero2,
+    doc: docs.esquinero2,
   },
 ];
 
 const vinilesReflejantes = [
   {
     title: 'Alta intensidad',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Topes de Alta intensidad fluorescente',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Grado ingeniería prismático',
-    pdf: null,
+    doc: null,
   },
 ];
 
 const botones = [
   {
     title: 'Botón hibrido 360',
-    pdf: pdfs.botonHibrido,
+    doc: docs.botonHibrido,
   },
   {
     title: 'Botón óptico',
-    pdf: pdfs.botonOptico,
+    doc: docs.botonOptico,
   },
   {
     title: 'Botón metálico',
-    pdf: pdfs.botonMetalico,
+    doc: docs.botonMetalico,
   },
 ];
 
 const delineadores = [
   {
     title: 'Trafitambos',
-    pdf: pdfs.trafitambo,
+    doc: docs.trafitambo,
   },
   {
     title: 'Conos',
-    pdf: pdfs.conos,
+    doc: docs.conos,
   },
   {
     title: 'Conos con base negra',
-    pdf: pdfs.conosBaseNegra,
+    doc: docs.conosBaseNegra,
   },
   {
     title: 'Barrera mini',
-    pdf: pdfs.barreraMini,
+    doc: docs.barreraMini,
   },
   {
     title: 'Barrera bicentenario',
-    pdf: pdfs.barrera,
+    doc: docs.barrera,
   },
   {
     title: 'Lámparas',
-    pdf: pdfs.lampara,
+    doc: docs.lampara,
   },
   {
     title: 'Delineadores',
-    pdf: pdfs.delineador,
+    doc: docs.delineador,
   },
   {
     title: 'Delimitadores',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Poste alineador',
-    pdf: pdfs.posteAlineador,
+    doc: docs.posteAlineador,
   },
   {
     title: 'Hito flex',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Poste cónico',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Panel vertical',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Flechero 18 módulos',
-    pdf: pdfs.flechero,
+    doc: docs.flechero,
   },
 ];
 
 const boyas = [
   {
     title: 'Boya premium',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Boya solar',
-    pdf: pdfs.boyaSolar,
+    doc: docs.boyaSolar,
   },
   {
     title: 'Boya solida',
-    pdf: pdfs.boyaSolida,
+    doc: docs.boyaSolida,
   },
   {
     title: 'Boya delineadora',
-    pdf: pdfs.boyaDelineadora,
+    doc: docs.boyaDelineadora,
   },
   {
     title: 'Mini boya',
-    pdf: pdfs.miniBoya,
+    doc: docs.miniBoya,
   },
   {
     title: 'Micro boya',
-    pdf: pdfs.microBoya,
+    doc: docs.microBoya,
   },
   {
     title: 'Boya metálica',
-    pdf: pdfs.boyaMetalica,
+    doc: docs.boyaMetalica,
   },
 ];
 
 const marcadorReflectivo = [
   {
     title: 'Unidireccional',
-    pdf: null,
+    doc: null,
   },
   {
     title: 'Bidireccional',
-    pdf: pdfs.marcadorReflectivo,
+    doc: docs.marcadorReflectivo,
   },
   {
     title: 'Vialetas metálicas',
-    pdf: pdfs.vialetaSolar,
+    doc: docs.vialetaSolar,
   },
 ];
 

@@ -1,33 +1,33 @@
-import barrera from './static/pdfs/Barrera.pdf';
-import botonHibrido from './static/pdfs/BotonHibrido.pdf';
-import botonMetalico from './static/pdfs/BotonMetalico.pdf';
-import botonOptico from './static/pdfs/BotonOptico.pdf';
-import boyaDelineadora from './static/pdfs/BoyaDelineadora.pdf';
-import boyaMetalica from './static/pdfs/BoyaMetalica.pdf';
-import boyaSolar from './static/pdfs/BoyaSolar.pdf';
-import boyaSolida from './static/pdfs/BoyaSolida.pdf';
-import conos from './static/pdfs/Conos.pdf';
-import delineador from './static/pdfs/Delineador.pdf';
-import esquinero from './static/pdfs/Esquinero.pdf';
-import esquinero2 from './static/pdfs/Esquinero2.pdf';
-import lampara from './static/pdfs/Lampara.pdf';
-import marcadorReflectivo from './static/pdfs/MarcadorReflectivo.pdf';
-import microBoya from './static/pdfs/MicroBoya.pdf';
-import miniBoya from './static/pdfs/MiniBoya.pdf';
-import posteAlineador from './static/pdfs/PosteAlineador.pdf';
-import reductorDeVelocidad from './static/pdfs/ReductorDeVelocidad.pdf';
-import topesDeEstacionamiento from './static/pdfs/TopesDeEstacionamiento.pdf';
-import trafitambo from './static/pdfs/Trafitambo.pdf';
-import vialetaSolar from './static/pdfs/VialetaSolar.pdf';
-import bolardo2 from './static/pdfs/Bolardo2.pdf';
-import bolardo3 from './static/pdfs/Bolardo3.pdf';
-import flechero from './static/pdfs/Flechero.pdf';
-import barreraMini from './static/pdfs/BarreraMini.pdf';
-import conosBaseNegra from './static/pdfs/ConosBaseNegra.pdf';
-import siop from './static/pdfs/SIOP.pdf';
-import sct from './static/pdfs/SCT.pdf';
+import barrera from './static/docs/Barrera.jpg';
+import botonHibrido from './static/docs/BotonHibrido.jpg';
+import botonMetalico from './static/docs/BotonMetalico.jpg';
+import botonOptico from './static/docs/BotonOptico.jpg';
+import boyaDelineadora from './static/docs/BoyaDelineadora.jpg';
+import boyaMetalica from './static/docs/BoyaMetalica.jpg';
+import boyaSolar from './static/docs/BoyaSolar.jpg';
+import boyaSolida from './static/docs/BoyaSolida.jpg';
+import conos from './static/docs/Conos.jpg';
+import delineador from './static/docs/Delineador.jpg';
+import esquinero from './static/docs/Esquinero.jpg';
+import esquinero2 from './static/docs/Esquinero2.jpg';
+import lampara from './static/docs/Lampara.jpg';
+import marcadorReflectivo from './static/docs/MarcadorReflectivo.jpg';
+import microBoya from './static/docs/MicroBoya.jpg';
+import miniBoya from './static/docs/MiniBoya.jpg';
+import posteAlineador from './static/docs/PosteAlineador.jpg';
+import reductorDeVelocidad from './static/docs/ReductorDeVelocidad.jpg';
+import topesDeEstacionamiento from './static/docs/TopesDeEstacionamiento.jpg';
+import trafitambo from './static/docs/Trafitambo.jpg';
+import vialetaSolar from './static/docs/VialetaSolar.jpg';
+import bolardo2 from './static/docs/Bolardo2.jpg';
+import bolardo3 from './static/docs/Bolardo3.jpg';
+import flechero from './static/docs/Flechero.jpg';
+import barreraMini from './static/docs/BarreraMini.jpg';
+import conosBaseNegra from './static/docs/ConosBaseNegra.jpg';
+import siop from './static/docs/SIOP.jpg';
+import sct from './static/docs/SCT.jpg';
 
-const pdfs = {
+const docs = {
   barrera,
   botonHibrido,
   botonMetalico,
@@ -58,4 +58,4 @@ const pdfs = {
   sct,
 };
 
-export { pdfs };
+export { docs };
